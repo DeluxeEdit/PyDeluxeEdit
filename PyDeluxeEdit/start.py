@@ -1,16 +1,22 @@
 import sys
-from PyQt5 import QtWidgets
+from PySide6.QtWidgets import QApplication
+from window import MainWindow
+from PyQt6 import QtCore, QtGui
+from window import Window
+
+App = QtGui.QApplication(sys.argv)
      
 #from PySide6.QtWidgets  import QApplication 
-from window import MainWindow
-App = QtWidgets.QApplication(sys.argv)
+#App = QApplication(sys.argv)
 
 
 #App = QApplication(sys.argv)
 #App = QGuiApplication(s##ys.argv)
 
-main=MainWindow()
-main.show()
+win=Window()
+win.show()
 App.exec()
 
 
+QApplication.shutdown()
+ 
