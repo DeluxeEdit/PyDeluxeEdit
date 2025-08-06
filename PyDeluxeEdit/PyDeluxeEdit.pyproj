@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>52d2bb6f-bec6-44b3-9749-9052e813240c</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>start.py</StartupFile>
+    <StartupFile>initapp.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="start.py" />
+    <Compile Include="initapp.py" />
     <Compile Include="window.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
