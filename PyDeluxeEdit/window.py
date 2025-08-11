@@ -1,11 +1,10 @@
 from pydoc import text
 from sqlite3 import connect
 from PySide6.QtCore import Slot
-from PySide6.QtWidgets import QMainWindow, QTextEdit
+from PySide6.QtWidgets import QMainWindow, QTextEdit,QTabWidget
 from PyQt6.QtWidgets import QApplication, QMainWindow
 from PyQt6.QtGui import QIcon
 import sys
-
 # Define a class for the main window
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -13,7 +12,8 @@ class MainWindow(QMainWindow):
     
     def handleFileChange(self):
         print("Text changed...>>> ")
-
+    tabs=QTabWidget()
+    myTab= tabs.addTab()
     text=QTextEdit()
     text.textChanged.connect(handleFileChange())
 
@@ -33,6 +33,6 @@ class MainWindow(QMainWindow):
 # Create an instance of the Window class
 window = MainWindow()
 # Show th e window
-# Start the application event loop and exit when it's done
+ # Start the application event loop and exit when it's done
 #sys.exit(app.exec())
         
