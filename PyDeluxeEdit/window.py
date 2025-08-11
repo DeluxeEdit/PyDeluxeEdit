@@ -21,10 +21,11 @@ class MainWindow(QMainWindow):
 
     tabFiles=QTabWidget()
     tab = QWidget(tabFiles)
-    tabsize.addTab(tab,"Test")
-          
-    text=QTextEdit()
-    text.textChanged.connect(handleFileChange())
+    tab.text=QTextEdit()
+    tab.text.textChanged.connect(handleFileChange())
+    
+    tabFiles.addTab(tab,"Test")
+    tabFiles.setTabText(0, "Changed")         
 
     def __init__(self):
         super().__init__()
