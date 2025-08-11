@@ -1,8 +1,10 @@
+from curses.ascii import TAB
 from pydoc import text
 from sqlite3 import connect
+from tokenize import tabsize
 from PySide6.QtCore import Slot
 from PySide6.QtWidgets import QMainWindow, QTextEdit,QTabWidget
-from PyQt6.QtWidgets import QApplication, QMainWindow
+from PyQt6.QtWidgets import QApplication, QMainWindow, QWidget
 from PyQt6.QtGui import QIcon
 import sys
 # Define a class for the main window
@@ -12,8 +14,15 @@ class MainWindow(QMainWindow):
     
     def handleFileChange(self):
         print("Text changed...>>> ")
-    tabs=QTabWidget()
-    myTab= tabs.addTab()
+   
+
+    
+        
+
+    tabFiles=QTabWidget()
+    tab = QWidget(tabFiles)
+    tabsize.addTab(tab,"Test")
+          
     text=QTextEdit()
     text.textChanged.connect(handleFileChange())
 
