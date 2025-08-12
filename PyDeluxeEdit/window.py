@@ -1,8 +1,3 @@
-from curses.ascii import TAB
-from pydoc import text
-from sqlite3 import connect
-from tokenize import tabsize
-from PySide6.QtCore import Slot
 from PySide6.QtWidgets import QMainWindow, QTextEdit,QTabWidget
 from PyQt6.QtWidgets import QApplication, QMainWindow, QWidget
 from PyQt6.QtGui import QIcon
@@ -31,7 +26,6 @@ class MainWindow(QMainWindow):
         super().__init__()
         
         # Set the geometry (position and size) of the window
-        self.setGeometry(200,200, 700, 400)
         # Set the title of the window
         self.setWindowTitle("PyQt6 - Codeloop.org")
         # Set the window icon
