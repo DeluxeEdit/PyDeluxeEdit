@@ -6,6 +6,9 @@ import sys
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
+        self.setWindowTitle("PyQt6 - Codeloop.org")
+        # Set the window icon
+        self.setWindowIcon(QIcon("deluxeedit.png"))
     
     def handleFileChange(self):
         print("Text changed...>>> ")
@@ -22,14 +25,10 @@ class MainWindow(QMainWindow):
     tabFiles.addTab(tab,"Test")
     tabFiles.setTabText(0, "Changed")         
 
-    def __init__(self):
-        super().__init__()
         
         # Set the geometry (position and size) of the window
         # Set the title of the window
-        self.setWindowTitle("PyQt6 - Codeloop.org")
-        # Set the window icon
-        self.setWindowIcon(QIcon('deluxeedit.png-'))
+
 
 # Create an instance of the QApplication
 ##
