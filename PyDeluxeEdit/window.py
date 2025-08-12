@@ -1,8 +1,7 @@
-from PySide6.QtWidgets import QMainWindow, QTextEdit,QTabWidget
-from PyQt6.QtWidgets import QApplication, QMainWindow, QWidget
+from PyQt6.QtWidgets import QWidget, QTabWidget, QTextEdit, QMainWindow
 from PyQt6.QtGui import QIcon
 import sys
-# Define a class for the main window
+
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -16,9 +15,9 @@ class MainWindow(QMainWindow):
 
     
         
-
+    flag = True
     tabFiles=QTabWidget()
-    tab = QWidget(tabFiles)
+    tab=QWidget(tabFiles,flag)
     tab.text=QTextEdit()
     tab.text.textChanged.connect(handleFileChange())
     
@@ -34,7 +33,6 @@ class MainWindow(QMainWindow):
 ##
 #app = QApplication(sys.argv)
 # Create an instance of the Window class
-window = MainWindow()
 # Show th e window
  # Start the application event loop and exit when it's done
 #sys.exit(app.exec())
