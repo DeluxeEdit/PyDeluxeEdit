@@ -1,5 +1,6 @@
 from PyQt6.QtWidgets import QWidget, QTabWidget, QTextEdit, QMainWindow
 from PyQt6.QtGui import QIcon
+from PyQt6.QtCore import Qt
 import sys
 
 class MainWindow(QMainWindow):
@@ -12,12 +13,9 @@ class MainWindow(QMainWindow):
     def handleFileChange(self):
         print("Text changed...>>> ")
    
-
-    
         
-    flag = True
     tabFiles=QTabWidget()
-    tab=QWidget(tabFiles,flag)
+    tab=QWidget(tabFiles,Qt.Window)
     tab.text=QTextEdit()
     tab.text.textChanged.connect(handleFileChange())
     

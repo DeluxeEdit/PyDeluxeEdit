@@ -21,7 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="controllers.py" />
+    <Compile Include="api.py" />
     <Compile Include="initapp.py" />
     <Compile Include="window.py" />
   </ItemGroup>
