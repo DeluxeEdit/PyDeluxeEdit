@@ -10,14 +10,13 @@ class MainWindow(QMainWindow):
         # Set the window icon
         self.setWindowIcon(QIcon("deluxeedit.png"))
     
-    def handleFileChange(self):
+    def handleFileChange(self,text):
         print("Text changed...>>> ")
    
-        
     tabFiles=QTabWidget()
-    tab=QWidget(tabFiles,Qt.Window)
+    tab=QWidget(tabFiles)
     tab.text=QTextEdit()
-    tab.text.textChanged.connect(handleFileChange())
+    tab.text.textChanged.connect(handleFileChange)
     
     tabFiles.addTab(tab,"Test")
     tabFiles.setTabText(0, "Changed")         
@@ -25,6 +24,7 @@ class MainWindow(QMainWindow):
         
         # Set the geometry (position and size) of the window
         # Set the title of the window
+   
 
 
 # Create an instance of the QApplication
