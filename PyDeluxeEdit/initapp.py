@@ -1,10 +1,12 @@
 
 import sys
-from PySide6.QtCore import Qt
-from PySide6.QtWidgets import QApplication, QLabel
+#from PySide6.QtCore import Qt
+#from PySide6.QtWidgets import QApplication
 
-if __name__ == "__main__":
-    app = QApplication(sys.argv)                                                     
+from PyQt6.QtWidgets import QApplication
+
+#if __name__ == "__main__":
+app = QApplication(sys.argv)                                                     
     
 
 from window import MainWindow
