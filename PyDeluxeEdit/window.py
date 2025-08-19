@@ -3,35 +3,23 @@ from PyQt6.QtGui import QIcon
 from PyQt6.QtCore import Qt
 import sys
 
-class MainWindow(QMainWindow):
+from PyQt6.QtWidgets import QWidget, QTabWidget, QTextEdit, QMainWindow
+class App(QMainWindow):
+    def handleFileChange(self,text):
+        print("Text changed...>>> ")
     def __init__(self):
         super().__init__()
+        self.tabFiles=QTabWidget()
+        self.tab=QWidget(self.tabFiles)
+        self.tab.text=QTextEdit()
+        self.tab.text.textChanged.connect( self.handleFileChange)
+    
+        self.tabFiles.addTab(self.tab,"Test")
+        self.tabFiles.setTabText(0, "Changed")         
+
         self.setWindowTitle("PyQt6 - Codeloop.org")
         # Set the window icon
         self.setWindowIcon(QIcon("deluxeedit.png"))
     
-    def handleFileChange(self,text):
-        print("Text changed...>>> ")
    
-    tabFiles=QTabWidget()
-    tab=QWidget(tabFiles)
-    tab.text=QTextEdit()
-    tab.text.textChanged.connect(handleFileChange)
-    
-    tabFiles.addTab(tab,"Test")
-    tabFiles.setTabText(0, "Changed")         
-
-        
-        # Set the geometry (position and size) of the window
-        # Set the title of the window
-   
-
-
-# Create an instance of the QApplication
-##
-#app = QApplication(sys.argv)
-# Create an instance of the Window class
-# Show th e window
- # Start the application event loop and exit when it's done
-#sys.exit(app.exec())
-        
+            

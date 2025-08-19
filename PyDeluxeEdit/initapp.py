@@ -9,8 +9,8 @@ from PyQt6.QtWidgets import QApplication
 app = QApplication(sys.argv)                                                     
     
 
-from window import MainWindow
-win=MainWindow()
+from window import App
+win=App()
 win.show()
 app.exec()
 
