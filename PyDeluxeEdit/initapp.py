@@ -11,7 +11,7 @@ app = QApplication(sys.argv)
 
 from window import App
 win=App()
-win.show()
+#win.show()
 app.exec()
 
 
