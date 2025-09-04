@@ -1,5 +1,5 @@
-from PyQt6.QtWidgets import QWidget, QTabWidget, QTextEdit, QMainWindow, QFormLayout
-from PyQt6.QtGui import QIcon
+from PyQt6.QtWidgets import QWidget, QTabWidget, QTextEdit, QMainWindow, QFormLayout,QMenuBar
+from PyQt6.QtGui import QIcon, QAction
 class TextTabItem(QWidget):
     
     def onTextChanged(text):
@@ -34,3 +34,10 @@ class App(QMainWindow):
         self.setWindowTitle("PyQt6 - Codeloop.org")
         # Set the window iconf
         self.setWindowIcon(QIcon("deluxeedit.png"))
+    def setMenu():
+        bar = QMenuBar()
+        file = bar.addMenu("File")
+        file.addAction("New")
+        save = QAction("Save")
+        save.setShortcut("Ctrl+S")
+        file.addAction(save)
