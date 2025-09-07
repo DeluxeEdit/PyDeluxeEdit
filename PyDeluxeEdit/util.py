@@ -1,17 +1,12 @@
-import os
-from ..models import FileInfo
+from unittest import result
+
+
 class Util: 
     @staticmethod
-    def getFiles(path, name):
+    def BytesToHex(a):
         result=[]
-
-        for root, dir, files in os.walk(path):
-            if name in files:
-                item=FileInfo()
-                item.path=os.path.join(root, name)
-                item.modified=os.path.getmtime(  item.path )
-                result.append(item)
-
-
-        return  result 
-
+        for b in a:
+            result.append( str.format(b, "{:02X} " ) )
+            
+        return result
+    
