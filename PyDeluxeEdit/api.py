@@ -9,15 +9,18 @@ class Api:
         ReadBufferSizeBytes = 32 * 1024
  
         with open(path,"r") as myFile:
-            detector = chardet.universaldetector.UniversalDetector()
-            
-        if os.path.isfile(path):
-            fileSize=os.path.getsize(path)
-            data=detector.feed(ReadBufferSizeBytes)
-            if hexView:
-                result +=Util.BytesToHex(data)
-
-             # for x in range(0, fileSize /ReadBufferSizeBytes):
+             if not hexView:
                 
-    #       
+            
+              if os.path.isfile(path):
+                fileSize=os.path.getsize(path)
+                data=myFile.read(ReadBufferSizeBytes)
+                #     detector.feed(ReadBufferSizeBytes)
+                if hexView:
+                    result +=Util.BytesToHex(data)
+                else:
+                    detector = chardet.universaldetector.UniversalDetector()
+                    # for x in range(0, fileSize /ReadBufferSizeBytes):
+                
+                #       
 
