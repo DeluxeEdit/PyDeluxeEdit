@@ -1,12 +1,17 @@
 from unittest import result
 
 
-class Util: 
+class Util:
     @staticmethod
-    def BytesToHex(a):
+    def ByteToHexString(b):
+        result=str.format(b, " {:02X} " ) 
+        return result
+
+    @staticmethod
+    def BytesToHexString(a):
         result=[]
         for b in a:
-            result.append( str.format(b, "{:02X} " ) )
+            result.append(Util.ByteToHexString(b)  )
             
         return result
     

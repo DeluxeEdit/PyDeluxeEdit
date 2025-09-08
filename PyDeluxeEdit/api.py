@@ -4,23 +4,28 @@ import os
 import chardet
 from util import * 
 class Api:
- 
+    ReadBufferSizeBytes = 32 * 1024
+    
     def loadFile(path,hexView=False):
-        ReadBufferSizeBytes = 32 * 1024
+        result=[]
  
         with open(path,"r") as myFile:
              if not hexView:
                 
-            
+                  
               if os.path.isfile(path):
                 fileSize=os.path.getsize(path)
-                data=myFile.read(ReadBufferSizeBytes)
-                #     detector.feed(ReadBufferSizeBytes)
-                if hexView:
-                    result +=Util.BytesToHex(data)
-                else:
-                    detector = chardet.universaldetector.UniversalDetector()
-                    # for x in range(0, fileSize /ReadBufferSizeBytes):
-                
+                for x in range(0, fileSize /Api.ReadBufferSizeBytes):
+           
+     #     detector.feed(ReadBufferSizeBytes)
+                    if hexView:
+                        data=myFile.read(Api.ReadBufferSizeBytes)
+                        result.append.BytesToHexString(data)
+                    else:
+                        detector = chardet.universaldetector.UniversalDetector()
+                        detector.feed(Api.ReadBufferSizeBytes)
+                        result.append( detector.done() )
+                        detector.close()
+                    
                 #       
 
