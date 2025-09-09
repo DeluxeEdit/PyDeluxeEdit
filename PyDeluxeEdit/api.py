@@ -24,7 +24,8 @@ class Api:
                     else:
                         detector = chardet.universaldetector.UniversalDetector()
                         detector.feed(Api.ReadBufferSizeBytes)
-                        result.append( detector.done() )
+                        lines=detector.done()
+                        result.append(lines  )
                         detector.close()
                     
                 #       
