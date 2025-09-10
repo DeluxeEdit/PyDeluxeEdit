@@ -6,6 +6,11 @@ from util import *
 class Api:
     ReadBufferSizeBytes = 32 * 1024
     
+    def saveFile(path, text):
+              with open(path, 'w') as f:
+                f.write(text)
+      
+
     def loadFile(path,hexView=False):
         result=[]
  

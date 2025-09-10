@@ -1,3 +1,4 @@
+from fileinput import filename
 from PyQt6.QtWidgets import QWidget, QTabWidget, QTextEdit, QMainWindow, QFormLayout,QMenuBar, QFileDialog
 from PyQt6.QtGui import QIcon, QAction
 class TextTabItem(QWidget):
@@ -27,13 +28,14 @@ class App(QMainWindow):
 
         self.tabFiles.addTab(self.tab,"Test")
         self.tabFiles.setTabText(0, "Changed")
-        
+        self.tab.text
 
       
     
         self.setWindowTitle("PyQt6 - Codeloop.org")
         # Set the window iconf
         self.setWindowIcon(QIcon("deluxeedit.png"))
+   
     def openFileDialog(self):
         dialog = QFileDialog(self)
         #dialog.setDirectory(r"C:\")
@@ -41,13 +43,20 @@ class App(QMainWindow):
         dialog.setNameFilter("All files (*.*)")
         dialog.setViewMode(QFileDialog.ViewMode.List)
         if dialog.exec():
-            filenames = dialog.selectedFiles()
-        
+                 if dialog.selectedFiles().length ==1:
+                     fileName=dialog.selectedFiles()[0]
+    
+    def saveAsDialog(self):
+        fileName = QFileDialog.getSaveFileName(self, "Save File", "All Files(*);;Text Files(*.txt)")
+        if fileName:      
+            saveF
     
     def setMenu():
         bar = QMenuBar()
         file = bar.addMenu("File")
         file.addAction("New")
+        openMenu = QAction("Open")
+        openMenu.setShortcut("Ctrl+O")
         save = QAction("Save")
         save.setShortcut("Ctrl+S")
         file.addAction(save, saveFile)
