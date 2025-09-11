@@ -1,6 +1,9 @@
 from fileinput import filename
+from os import path
+from tkinter.filedialog import SaveFileDialog
 from PyQt6.QtWidgets import QWidget, QTabWidget, QTextEdit, QMainWindow, QFormLayout,QMenuBar, QFileDialog
 from PyQt6.QtGui import QIcon, QAction
+from api import Api
 class TextTabItem(QWidget):
     
     def onTextChanged(text):
@@ -10,7 +13,6 @@ class TextTabItem(QWidget):
         super().__init__()
         layout = QFormLayout()
         self.setLayout(layout)
-
         self.text = QTextEdit()
         layout.addRow(self.text)
         self.text.textChanged.connect(self.onTextChanged)
@@ -18,24 +20,6 @@ class TextTabItem(QWidget):
                 
     
 class App(QMainWindow):
-    def __init__(self):
-        super().__init__()
-        
-        self.tabFiles=QTabWidget()
-        self.tab=TextTabItem() 
-   
-        self.setCentralWidget(self.tabFiles)
-
-        self.tabFiles.addTab(self.tab,"Test")
-        self.tabFiles.setTabText(0, "Changed")
-        self.tab.text
-
-      
-    
-        self.setWindowTitle("PyQt6 - Codeloop.org")
-        # Set the window iconf
-        self.setWindowIcon(QIcon("deluxeedit.png"))
-   
     def openFileDialog(self):
         dialog = QFileDialog(self)
         #dialog.setDirectory(r"C:\")
@@ -43,20 +27,44 @@ class App(QMainWindow):
         dialog.setNameFilter("All files (*.*)")
         dialog.setViewMode(QFileDialog.ViewMode.List)
         if dialog.exec():
-                 if dialog.selectedFiles().length ==1:
-                     fileName=dialog.selectedFiles()[0]
+            if dialog.selectedFiles().length ==1:
+                file=dialog.selectedFiles()[0]
+                self.api.loadFile(file)
     
+   
     def saveAsDialog(self):
-        fileName = QFileDialog.getSaveFileName(self, "Save File", "All Files(*);;Text Files(*.txt)")
-        if fileName:      
-            saveF
+        file = QFileDialog.getSaveFileName(self, "Save File", "All Files(*);;Text Files(*.txt)")
+        if file:      
+            
     
-    def setMenu():
-        bar = QMenuBar()
-        file = bar.addMenu("File")
-        file.addAction("New")
-        openMenu = QAction("Open")
-        openMenu.setShortcut("Ctrl+O")
-        save = QAction("Save")
-        save.setShortcut("Ctrl+S")
-        file.addAction(save, saveFile)
+            def setMenu():
+                bar = QMenuBar()
+                file = bar.addMenu("File")
+                file.addAction("New")
+                openMenu = QAction("Open")
+                openMenu.setShortcut("Ctrl+O")
+                save = QAction("Save")
+                save.setShortcut("Ctrl+S")
+                file.addAction(save, self.saveAsDialog)
+                file.addAction(openMenu, self.openFileDialog)
+
+            def __init__(self):
+                super().__init__()
+        
+                self.tabFiles=QTabWidget()
+   
+                self.setCentralWidget(self.tabFiles)
+
+                self.api=Api()
+                setMenu()
+    
+        self.setWindowTitle("PyQt6 - Codeloop.org")
+        # Set the window iconf
+        self.setWindowIcon(QIcon("deluxeedit.png"))
+
+    def addFile(path,hexView=False):
+        tab=TextTabItem() 
+        self.tabFiles.addTab(tab,path)
+  
+       
+   
