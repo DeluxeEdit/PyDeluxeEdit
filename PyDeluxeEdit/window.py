@@ -40,19 +40,24 @@ class App(QMainWindow):
         file = QFileDialog.getSaveFileName(self, "Save File", "All Files(*);;Text Files(*.txt)")
         if file:      
             
-    
-            def setMenu():
-                bar = QMenuBar()
-                file = bar.addMenu("File")
-                file.addAction("New")
-                openMenu = QAction("Open")
-                openMenu.setShortcut("Ctrl+O")
-                save = QAction("Save")
-                save.setShortcut("Ctrl+S")
-                file.addAction(save, self.saveAsDialog)
-                file.addAction(openMenu, self.openFileDialog)
+            def doHexView(path):
+                Self.addFile(path, True)
 
-            def __init__(self):
+        def setMenu():
+            bar = QMenuBar()
+            file = bar.addMenu("File")
+            file.addAction("New")
+            openMenu = QAction("Open")
+            openMenu.setShortcut("Ctrl+O")
+            hexViewMenu = QAction("Hex view")
+            hexViewMenu.setShortcut("Ctrl+H")
+            save = QAction("Save")
+            save.setShortcut("Ctrl+S")
+            file.addAction(save, Self.saveAsDialog)
+            file.addAction(openMenu, Self.openFileDialog)
+            file.addAction(hexViewMenu, Self.doHexView)
+
+        def __init__(self):
                 super().__init__()
         
                 self.tabFiles=QTabWidget()
@@ -62,10 +67,10 @@ class App(QMainWindow):
                 self.api=Api()  
                 setMenu()
     
-        self.setWindowTitle("PyQt6 - Codeloop.org")
-        # Set the window iconf
-        self.setWindowIcon(QIcon("deluxeedit.png"))
+                self.setWindowTitle("PyQt6 - Codeloop.org")
+                # Set the window iconf
+                self.setWindowIcon(QIcon("deluxeedit.png"))
 
 
-        
+
           
