@@ -1,6 +1,7 @@
 from fileinput import filename
 from os import path
 from tkinter.filedialog import SaveFileDialog
+from typing import Self
 from PyQt6.QtWidgets import QWidget, QTabWidget, QTextEdit, QMainWindow, QFormLayout,QMenuBar, QFileDialog
 from PyQt6.QtGui import QIcon, QAction
 from api import Api
@@ -20,6 +21,10 @@ class TextTabItem(QWidget):
                 
     
 class App(QMainWindow):
+    def addFile(path,hexView=False):
+        tab=TextTabItem() 
+        Self.tabFiles.addTab(tab,path)
+        tab.text=Self.api.loadFile(path,hexView)
     def openFileDialog(self):
         dialog = QFileDialog(self)
         #dialog.setDirectory(r"C:\")
@@ -29,8 +34,7 @@ class App(QMainWindow):
         if dialog.exec():
             if dialog.selectedFiles().length ==1:
                 file=dialog.selectedFiles()[0]
-                self.api.loadFile(file)
-    
+                Self.addFile(path)
    
     def saveAsDialog(self):
         file = QFileDialog.getSaveFileName(self, "Save File", "All Files(*);;Text Files(*.txt)")
@@ -55,16 +59,13 @@ class App(QMainWindow):
    
                 self.setCentralWidget(self.tabFiles)
 
-                self.api=Api()
+                self.api=Api()  
                 setMenu()
     
         self.setWindowTitle("PyQt6 - Codeloop.org")
         # Set the window iconf
         self.setWindowIcon(QIcon("deluxeedit.png"))
 
-    def addFile(path,hexView=False):
-        tab=TextTabItem() 
-        self.tabFiles.addTab(tab,path)
-  
-       
-   
+
+        
+          
