@@ -25,7 +25,7 @@ class App(QMainWindow):
         tab=TextTabItem() 
         Self.tabFiles.addTab(tab,path)
         tab.text=Self.api.loadFile(path,hexView)
-    def openFileDialog(self):
+    def openFileDialog(self, hexView=False):
         dialog = QFileDialog(self)
         #dialog.setDirectory(r"C:\")
         dialog.setFileMode(QFileDialog.FileMode.ExistingFiles)
@@ -34,14 +34,14 @@ class App(QMainWindow):
         if dialog.exec():
             if dialog.selectedFiles().length ==1:
                 file=dialog.selectedFiles()[0]
-                Self.addFile(path)
+                Self.addFile(path,hexView)
    
     def saveAsDialog(self):
         file = QFileDialog.getSaveFileName(self, "Save File", "All Files(*);;Text Files(*.txt)")
         if file:      
             
-            def doHexView(path):
-                Self.addFile(path, True)
+            def doHexView():
+                Self.openFileDialog(self, True)
 
         def setMenu():
             bar = QMenuBar()
