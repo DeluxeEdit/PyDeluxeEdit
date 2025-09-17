@@ -45,38 +45,40 @@ class App(QMainWindow):
             def doHexView():
                 Self.openFileDialog(True)
 
-def setMenu():
-    bar = QMenuBar()
-    file = bar.addMenu("File")
-    file.addAction("New")
-    openMenu = QAction("Open")
-    openMenu.setShortcut("Ctrl+O")
-    hexViewMenu = QAction("Hex view")
-    hexViewMenu.setShortcut("Ctrl+H")
-    save = QAction("Save")
-    save.setShortcut("Ctrl+S")
-    file.addAction(save, Self.saveAsDialog)
-    file.addAction(openMenu, Self.openFileDialog)
-    file.addAction(hexViewMenu, Self.doHexView)
+    def setMenu():
+        bar = QMenuBar()
+        file = bar.addMenu("File")
+        file.addAction("New")
+        openMenu = QAction("Open")
+        openMenu.setShortcut("Ctrl+O")
+        hexViewMenu = QAction("Hex view")
+        hexViewMenu.setShortcut("Ctrl+H")
+        save = QAction("Save")
+        save.setShortcut("Ctrl+S")
+        file.addAction(save, Self.saveAsDialog)
+        file.addAction(openMenu, Self.openFileDialog)
+        file.addAction(hexViewMenu, Self.doHexView)
             
-def statusChanged(text):
-    Self.log.addItem(text)
+    def statusChanged(text):
+        Self.log.addItem(text)
 
             
     def __init__(self):
         super().__init__()    
                     
         self.status = QStatusBar()
+        self.status.messageChanged(self.statusChanged)
+        self.addPermanentWidget(self.status)
+
         self.toolbar=QToolBar("Log")
         self.log=QListWidget(self)
         self.toolbar.addWidget(self.log)
-        self.status.messageChanged(statusChanged)
         self.addToolbar(self.toolbar)
-        self.addPermanentWidget(self.status)
+        
         self.tabFiles=QTabWidget()
         self.setCentralWidget(self.tabFiles)
         self.api=Api()  
-        setMenu()
+        self.setMenu()
         self.setWindowTitle("PyQt6 - Codeloop.org")
         self.setWindowIcon(QIcon("deluxeedit.png"))
 
