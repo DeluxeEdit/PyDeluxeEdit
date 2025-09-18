@@ -1,8 +1,7 @@
 from fileinput import filename
 from os import path
-from tkinter.filedialog import SaveFileDialog
 from typing import Self
-from PyQt6.QtWidgets import QWidget,QTabWidget, QTextEdit, QMainWindow, QFormLayout, QMenuBar, QFileDialog, QStatusBar, QToolBar,QListWidget
+from PyQt6.QtWidgets import QWidget,QTabWidget, QTextEdit, QMainWindow, QFormLayout,QMenuBar, QFileDialog, QStatusBar, QToolBar,QListWidget
 from PyQt6.QtGui import QIcon, QAction
 from api import Api
 
@@ -70,15 +69,14 @@ class App(QMainWindow):
 
         self.status = QStatusBar()
         self.status.messageChanged.connect(self.statusChanged)
-        self.status = QStatusBar()
-        self.status = QStatusBar()
-        self.addPermanentWidget (self.status)
+        self.status.addPermanentWidget(self)
+     
 
         self.toolbar = QToolBar("Log")
         self.log = QListWidget(self)
         self.toolbar.addWidget(self.log)
         self.addToolbar(self.toolbar)
-
+        
         self.tabFiles = QTabWidget()
         self.setCentralWidget(self.tabFiles)
         self.api = Api()
