@@ -8,7 +8,7 @@ class Util:
         return result
 
     @staticmethod
-    def BytesToHexString(a):
+    def BytesToHexStrings(a):
         result=[]
         for b in a:
             result.append(Util.ByteToHexString(b)  )

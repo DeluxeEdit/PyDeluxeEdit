@@ -22,11 +22,12 @@ class TextTabItem(QWidget):
 
 class App(QMainWindow):
 
-    def loadAddFile(path, hexView=False):
+    def loadAddFile(filePath, hexView=False):
+        tabName=path.basename(filePath)
         tab = TextTabItem()
-        Self.tabFiles.addTab(tab, path)
-        tab.text = Self.api.loadFile(path, hexView)
-        Self.status.showMessage("File:", path)
+        Self.tabFiles.addTab(tab, tabName)
+        tab.text = Self.api.loadFile(filePath, hexView)
+        Self.status.showMessage("File:", filePath)
 
     def openFileDialog(hexView=False):
         dialog = QFileDialog(Self)
@@ -36,7 +37,7 @@ class App(QMainWindow):
         if dialog.exec():
             if dialog.selectedFiles().length == 1:
                 file = dialog.selectedFiles()[0]
-                Self.loadAddFile(path, hexView)
+                Self.loadAddFile(file, hexView)
 
     def saveAsDialog():
         file = QFileDialog.getSaveFileName(
