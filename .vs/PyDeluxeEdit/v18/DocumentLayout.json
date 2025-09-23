@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\gitroot\\PyDeluxeEdit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\textTabItem.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|solutionrelative:PyDeluxeEdit\\textTabItem.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|solutionrelative:PyDeluxeEdit\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\window.py||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -43,7 +43,8 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-08-06T12:29:28.985Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -53,24 +54,20 @@
               "RelativeDocumentMoniker": "PyDeluxeEdit\\window.py",
               "ToolTip": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\window.py",
               "RelativeToolTip": "PyDeluxeEdit\\window.py",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAABgAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-09-23T16:50:48.9Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "textTabItem.py",
-              "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\textTabItem.py",
-              "RelativeDocumentMoniker": "PyDeluxeEdit\\textTabItem.py",
-              "ToolTip": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\textTabItem.py",
-              "RelativeToolTip": "PyDeluxeEdit\\textTabItem.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Title": "models.py",
+              "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\models.py",
+              "RelativeDocumentMoniker": "PyDeluxeEdit\\models.py",
+              "ToolTip": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\models.py",
+              "RelativeToolTip": "PyDeluxeEdit\\models.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-09-23T16:42:57.117Z",
               "EditorCaption": ""
@@ -85,7 +82,8 @@
               "RelativeToolTip": "PyDeluxeEdit\\api.py",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-08-12T15:02:22.283Z"
+              "WhenOpened": "2025-08-12T15:02:22.283Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -97,7 +95,8 @@
               "RelativeToolTip": "PyDeluxeEdit\\util.py",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-09-06T22:53:37.216Z"
+              "WhenOpened": "2025-09-06T22:53:37.216Z",
+              "EditorCaption": ""
             }
           ]
         }

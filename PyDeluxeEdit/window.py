@@ -2,19 +2,11 @@ from os import path
 from typing import Self
 from PyQt6.QtWidgets import QTabWidget, QMainWindow,QMenuBar, QFileDialog, QStatusBar, QToolBar,QListWidget
 from PyQt6.QtGui import QIcon, QAction
-from textTabItem import TextTabItem
+from models import TextTabItem, Tabs
 from api import Api
 
 class App(QMainWindow):
  
-    @property
-    def currentTab(self):
-        result=None
-        index=self.tabFiles.currentIndex
-        if index>=0:
-             result=self.allTabs[index]
-
-        return result
         
     def loadAndAddFile(filePath, hexView=False):
         tabName=path.basename(filePath)
@@ -71,10 +63,10 @@ class App(QMainWindow):
         self.log = QListWidget(self)
         self.toolbar.addWidget(self.log)
         self.addToolbar(self.toolbar)
-        
-        self.tabFiles = QTabWidget()
+        self.tabsHelper=Tabs()
+
         self.allTabs=[]
-        self.setCentralWidget(self.tabFiles)
+        self.setCentralWidget(self.tabsHelper.tabFiles)
         self.api = Api()
         self.setMenu()
         self.setWindowTitle("PyQt6 - Codeloop.org")

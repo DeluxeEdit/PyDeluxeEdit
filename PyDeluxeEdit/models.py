@@ -1,4 +1,18 @@
-from PyQt6.QtWidgets import QWidget, QTextEdit, QFormLayout
+from PyQt6.QtWidgets import QWidget, QTextEdit, QFormLayout, QTabWidget
+
+class Tabs:
+       
+    def __init__(self):
+         self.tabFiles = QTabWidget()
+
+    @property
+    def currentTab(self):
+        result=None
+        index=self.tabFiles.currentIndex
+        if index>=0:
+             result=self.allTabs[index]
+
+        return result
 
 class TextTabItem(QWidget):
 
