@@ -1,28 +1,11 @@
-from fileinput import filename
 from os import path
-from pickle import NONE
 from typing import Self
-from PyQt6.QtWidgets import QWidget,QTabWidget, QTextEdit, QMainWindow, QFormLayout,QMenuBar, QFileDialog, QStatusBar, QToolBar,QListWidget
+from PyQt6.QtWidgets import QTabWidget, QMainWindow,QMenuBar, QFileDialog, QStatusBar, QToolBar,QListWidget
 from PyQt6.QtGui import QIcon, QAction
+from textTabItem import TextTabItem
 from api import Api
 
-
-class TextTabItem(QWidget):
-
-    def onTextChanged(text):
-        print("Text changed.>>> ")
-
-    def __init__(self):
-        super().__init__()
-        layout = QFormLayout()
-        self.setLayout(layout)
-        self.text = QTextEdit()
-        layout.addRow(self.text)
-        self.text.textChanged.connect(self.onTextChanged)
-
-
 class App(QMainWindow):
- 
  
     @property
     def currentTab(self):
@@ -33,13 +16,13 @@ class App(QMainWindow):
 
         return result
         
-
     def loadAndAddFile(filePath, hexView=False):
         tabName=path.basename(filePath)
         tab = TextTabItem()
+        tab.filePath=filePath
         Self.tabFiles.addTab(tab, tabName)
         Self.allTabs.append(tab)
-        tab.text = Self.api.loadFile(filePath, hexView)
+        tab.text.append(Self.api.loadFile(filePath, hexView))
         Self.status.showMessage("File:", filePath)
 
     def openFileDialog(hexView=False):
@@ -55,7 +38,7 @@ class App(QMainWindow):
     def saveAsDialog():
         filePath = QFileDialog.getSaveFileName(Self, "Save File", "All Files(*);;Text Files(*.txt)")
         if filePath:
-            Self.t
+            Self.currentTab.text
             def doHexView():
                 Self.openFileDialog(True)
 
@@ -63,7 +46,7 @@ class App(QMainWindow):
         bar = QMenuBar()
         file = bar.addMenu("File")
         newMenu= QAction("New")
-        newMenu.setShortcut("Ctrl+H")
+        newMenu.setShortcut("Ctrl+N")
         openMenu = QAction("Open")
         openMenu.setShortcut("Ctrl+O")
         hexViewMenu = QAction("Hex view")
@@ -73,7 +56,7 @@ class App(QMainWindow):
         file.addAction(save, Self.saveAsDialog)
         file.addAction(openMenu, Self.openFileDialog)
         file.addAction(hexViewMenu, Self.doHexView)
-
+        bar.show()
     def statusChanged(text):
         Self.log.addItem(text)
 

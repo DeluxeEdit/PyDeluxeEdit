@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\gitroot\\PyDeluxeEdit\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\textTabItem.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|solutionrelative:PyDeluxeEdit\\textTabItem.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\window.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|solutionrelative:PyDeluxeEdit\\window.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\api.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|solutionrelative:PyDeluxeEdit\\api.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\initApp.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|solutionrelative:PyDeluxeEdit\\initApp.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\util.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|solutionrelative:PyDeluxeEdit\\util.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\initApp.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|solutionrelative:PyDeluxeEdit\\initApp.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\api.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|solutionrelative:PyDeluxeEdit\\api.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,46 +34,28 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "initApp.py",
               "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\initapp.py",
               "RelativeDocumentMoniker": "PyDeluxeEdit\\initapp.py",
               "ToolTip": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\initapp.py",
               "RelativeToolTip": "PyDeluxeEdit\\initapp.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-08-06T12:29:28.985Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "api.py",
-              "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\api.py",
-              "RelativeDocumentMoniker": "PyDeluxeEdit\\api.py",
-              "ToolTip": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\api.py",
-              "RelativeToolTip": "PyDeluxeEdit\\api.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-08-12T15:02:22.283Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "window.py",
               "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\window.py",
               "RelativeDocumentMoniker": "PyDeluxeEdit\\window.py",
               "ToolTip": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\window.py",
               "RelativeToolTip": "PyDeluxeEdit\\window.py",
-              "ViewState": "AgIAABcAAAAAAAAAAAAwwBsAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-07-29T21:57:25.46Z",
+              "WhenOpened": "2025-09-23T16:50:48.9Z",
               "EditorCaption": ""
             },
             {
@@ -78,7 +64,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "textTabItem.py",
+              "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\textTabItem.py",
+              "RelativeDocumentMoniker": "PyDeluxeEdit\\textTabItem.py",
+              "ToolTip": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\textTabItem.py",
+              "RelativeToolTip": "PyDeluxeEdit\\textTabItem.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-09-23T16:42:57.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "api.py",
+              "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\api.py",
+              "RelativeDocumentMoniker": "PyDeluxeEdit\\api.py",
+              "ToolTip": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\api.py",
+              "RelativeToolTip": "PyDeluxeEdit\\api.py",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-12T15:02:22.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "util.py",
               "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\util.py",
               "RelativeDocumentMoniker": "PyDeluxeEdit\\util.py",
