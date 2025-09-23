@@ -1,5 +1,6 @@
 from fileinput import filename
 from os import path
+from pickle import NONE
 from typing import Self
 from PyQt6.QtWidgets import QWidget,QTabWidget, QTextEdit, QMainWindow, QFormLayout,QMenuBar, QFileDialog, QStatusBar, QToolBar,QListWidget
 from PyQt6.QtGui import QIcon, QAction
@@ -21,11 +22,23 @@ class TextTabItem(QWidget):
 
 
 class App(QMainWindow):
+ 
+ 
+    @property
+    def currentTab(self):
+        result=None
+        index=self.tabFiles.currentIndex
+        if index>=0:
+             result=self.allTabs[index]
 
-    def loadAddFile(filePath, hexView=False):
+        return result
+        
+
+    def loadAndAddFile(filePath, hexView=False):
         tabName=path.basename(filePath)
         tab = TextTabItem()
         Self.tabFiles.addTab(tab, tabName)
+        Self.allTabs.append(tab)
         tab.text = Self.api.loadFile(filePath, hexView)
         Self.status.showMessage("File:", filePath)
 
@@ -40,18 +53,17 @@ class App(QMainWindow):
                 Self.loadAddFile(file, hexView)
 
     def saveAsDialog():
-        file = QFileDialog.getSaveFileName(
-            Self, "Save File", "All Files(*);;Text Files(*.txt)"
-        )
-        if file:
-
+        filePath = QFileDialog.getSaveFileName(Self, "Save File", "All Files(*);;Text Files(*.txt)")
+        if filePath:
+            Self.t
             def doHexView():
                 Self.openFileDialog(True)
 
     def setMenu():
         bar = QMenuBar()
         file = bar.addMenu("File")
-        file.addAction("New")
+        newMenu= QAction("New")
+        newMenu.setShortcut("Ctrl+H")
         openMenu = QAction("Open")
         openMenu.setShortcut("Ctrl+O")
         hexViewMenu = QAction("Hex view")
@@ -69,16 +81,16 @@ class App(QMainWindow):
         super().__init__()
 
         self.status = QStatusBar()
+
         self.status.messageChanged.connect(self.statusChanged)
         self.status.addPermanentWidget(self)
-     
-
         self.toolbar = QToolBar("Log")
         self.log = QListWidget(self)
         self.toolbar.addWidget(self.log)
         self.addToolbar(self.toolbar)
         
         self.tabFiles = QTabWidget()
+        self.allTabs=[]
         self.setCentralWidget(self.tabFiles)
         self.api = Api()
         self.setMenu()
