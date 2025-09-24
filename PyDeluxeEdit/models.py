@@ -3,8 +3,9 @@ from PyQt6.QtWidgets import QWidget, QTextEdit, QFormLayout, QTabWidget
 class Tabs:
        
     def __init__(self):
-         self.tabFiles = QTabWidget()
-
+        super().__init__()
+        self.tabFiles = QTabWidget()
+        self.allTabs=[]
     @property
     def currentTab(self):
         result=None

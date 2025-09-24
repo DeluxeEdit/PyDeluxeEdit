@@ -6,15 +6,16 @@ from models import TextTabItem, Tabs
 from api import Api
 
 class App(QMainWindow):
- 
         
-    def loadAndAddFile(filePath, hexView=False):
+    def addAndLoadFile(filePath, hexView=False):
         tabName=path.basename(filePath)
         tab = TextTabItem()
         tab.filePath=filePath
         Self.tabFiles.addTab(tab, tabName)
-        Self.allTabs.append(tab)
+        Self.tabsHelper.allTabs.append(tab)
         tab.text.append(Self.api.loadFile(filePath, hexView))
+        formats= tab.text.document().allFormats()
+        
         Self.status.showMessage("File:", filePath)
 
     def openFileDialog(hexView=False):
@@ -24,13 +25,14 @@ class App(QMainWindow):
         dialog.setViewMode(QFileDialog.ViewMode.List)
         if dialog.exec():
             if dialog.selectedFiles().length == 1:
-                file = dialog.selectedFiles()[0]
-                Self.loadAddFile(file, hexView)
+                filePath = dialog.selectedFiles()[0]
+                Self. addAndLoadFile(filePath, hexView)
 
     def saveAsDialog():
         filePath = QFileDialog.getSaveFileName(Self, "Save File", "All Files(*);;Text Files(*.txt)")
         if filePath:
-            Self.currentTab.text
+            Self.api.saveFile(filePath,Self.tabsHelper.currentTab.text.document().toRawText())
+            
             def doHexView():
                 Self.openFileDialog(True)
 
@@ -64,8 +66,6 @@ class App(QMainWindow):
         self.toolbar.addWidget(self.log)
         self.addToolbar(self.toolbar)
         self.tabsHelper=Tabs()
-
-        self.allTabs=[]
         self.setCentralWidget(self.tabsHelper.tabFiles)
         self.api = Api()
         self.setMenu()
