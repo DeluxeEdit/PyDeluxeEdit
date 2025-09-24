@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\gitroot\\PyDeluxeEdit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\api.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|solutionrelative:PyDeluxeEdit\\api.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\initApp.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|solutionrelative:PyDeluxeEdit\\initApp.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\window.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|solutionrelative:PyDeluxeEdit\\window.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|solutionrelative:PyDeluxeEdit\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\api.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|solutionrelative:PyDeluxeEdit\\api.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\initApp.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|solutionrelative:PyDeluxeEdit\\initApp.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|solutionrelative:PyDeluxeEdit\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{52D2BB6F-BEC6-44B3-9749-9052E813240C}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\util.py||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -30,20 +30,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "initApp.py",
               "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\initapp.py",
               "RelativeDocumentMoniker": "PyDeluxeEdit\\initapp.py",
               "ToolTip": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\initapp.py",
               "RelativeToolTip": "PyDeluxeEdit\\initapp.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-08-06T12:29:28.985Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -53,14 +54,14 @@
               "RelativeDocumentMoniker": "PyDeluxeEdit\\window.py",
               "ToolTip": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\window.py",
               "RelativeToolTip": "PyDeluxeEdit\\window.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAIwEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-09-23T16:50:48.9Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "models.py",
               "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\models.py",
               "RelativeDocumentMoniker": "PyDeluxeEdit\\models.py",
@@ -68,21 +69,19 @@
               "RelativeToolTip": "PyDeluxeEdit\\models.py",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAABoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-09-23T16:42:57.117Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-23T16:42:57.117Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "api.py",
               "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\api.py",
               "RelativeDocumentMoniker": "PyDeluxeEdit\\api.py",
               "ToolTip": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\api.py",
               "RelativeToolTip": "PyDeluxeEdit\\api.py",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAABkAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAABkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-08-12T15:02:22.283Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-12T15:02:22.283Z"
             },
             {
               "$type": "Document",

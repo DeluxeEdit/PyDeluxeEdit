@@ -64,10 +64,10 @@ class App(QMainWindow):
         self.toolbar = QToolBar("Log")
         self.log = QListWidget(self)
         self.toolbar.addWidget(self.log)
-        self.addToolbar(self.toolbar)
+        self.addToolBar(self.toolbar)
         self.tabsHelper=Tabs()
         self.setCentralWidget(self.tabsHelper.tabFiles)
         self.api = Api()
-        self.setMenu()
+        self.setMenu
         self.setWindowTitle("PyQt6 - Codeloop.org")
         self.setWindowIcon(QIcon("deluxeedit.png"))
