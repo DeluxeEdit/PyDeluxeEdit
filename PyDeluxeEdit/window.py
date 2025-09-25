@@ -8,34 +8,48 @@ from api import Api
 class App(QMainWindow):
         
     def addAndLoadFile(filePath, hexView=False):
-        tabName=path.basename(filePath)
         tab = TextTabItem()
         tab.filePath=filePath
-        Self.tabFiles.addTab(tab, tabName)
-        Self.tabsHelper.allTabs.append(tab)
+        Self.tabFiles.addTab(tab, path.basename(filePath))
+        Self.tabs.allTabs.append(tab)
         tab.text.append(Self.api.loadFile(filePath, hexView))
         formats= tab.text.document().allFormats()
         
         Self.status.showMessage("File:", filePath)
+    
+    def doNewFile(filePath):
+        tab = TextTabItem()
+        tab.filePath=filePath
+        Self.tabFiles.addTab(tab, path.basename(filePath))
+        Self.tabs.allTabs.append(tab)
+        
+    def newFileDialog():
+        dialog = QFileDialog(Self)
+        dialog.setFileMode(QFileDialog.FileMode.AnyFile)
+        dialog.setNameFilter("New File", "All files (*.*)")
+        if dialog.exec():
+            filePath = dialog.selectFile
+            Self.doNewFile(filePath)
+               
 
     def openFileDialog(hexView=False):
         dialog = QFileDialog(Self)
         dialog.setFileMode(QFileDialog.FileMode.ExistingFiles)
         dialog.setNameFilter("Open File", "All files (*.*)")
-        dialog.setViewMode(QFileDialog.ViewMode.List)
         if dialog.exec():
-            if dialog.selectedFiles().length == 1:
-                filePath = dialog.selectedFiles()[0]
+                filePath = dialog.selectFile
                 Self. addAndLoadFile(filePath, hexView)
 
     def saveAsDialog():
         filePath = QFileDialog.getSaveFileName(Self, "Save File", "All Files(*);;Text Files(*.txt)")
         if filePath:
-            Self.api.saveFile(filePath,Self.tabsHelper.currentTab.text.document().toRawText())
+            Self.api.saveFile(filePath,Self.tabs.currentTab.text.document().toRawText())
             
-            def doHexView():
-                Self.openFileDialog(True)
-
+    def doHexView():
+        Self.openFileDialog(True)
+    
+ 
+ 
     def setMenu():
         bar = QMenuBar()
         file = bar.addMenu("File")
@@ -65,8 +79,8 @@ class App(QMainWindow):
         self.log = QListWidget(self)
         self.toolbar.addWidget(self.log)
         self.addToolBar(self.toolbar)
-        self.tabsHelper=Tabs()
-        self.setCentralWidget(self.tabsHelper.tabFiles)
+        self.tabs=Tabs()
+        self.setCentralWidget(self.tabs.tabFiles)
         self.api = Api()
         self.setMenu
         self.setWindowTitle("PyQt6 - Codeloop.org")
