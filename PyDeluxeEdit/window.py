@@ -20,6 +20,7 @@ class App(QMainWindow):
     def doNewFile(filePath):
         tab = TextTabItem()
         tab.filePath=filePath
+        tab.isNewFile=True
         Self.tabFiles.addTab(tab, path.basename(filePath))
         Self.tabs.allTabs.append(tab)
         
@@ -64,6 +65,7 @@ class App(QMainWindow):
         file.addAction(save, Self.saveAsDialog)
         file.addAction(openMenu, Self.openFileDialog)
         file.addAction(hexViewMenu, Self.doHexView)
+        file.addAction(newMenu, Self.newFileDialog)
         bar.show()
     def statusChanged(text):
         Self.log.addItem(text)
