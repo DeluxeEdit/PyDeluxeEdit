@@ -2,15 +2,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>52d2bb6f-bec6-44b3-9749-9052e813240c</ProjectGuid>
+    <ProjectGuid>339b9cb4-d36a-4d87-9b5d-d283f74fb147</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>initApp.py</StartupFile>
+    <StartupFile>initapp.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>DeluxeEdit</Name>
-    <RootNamespace>DeluxeEdit</RootNamespace>
+    <Name>PyDeluxeEdit</Name>
+    <RootNamespace>PyDeluxeEdit</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,10 +22,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="api.py" />
+    <Compile Include="class1.py" />
+    <Compile Include="initapp.py" />
     <Compile Include="models.py" />
-    <Compile Include="initApp.py" />
     <Compile Include="util.py" />
     <Compile Include="window.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="deluxeedit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
