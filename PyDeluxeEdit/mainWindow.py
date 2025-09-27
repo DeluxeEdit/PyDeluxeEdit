@@ -5,8 +5,8 @@ from PyQt6.QtGui import QIcon, QAction
 from models import TextTabItem, Tabs
 from api import Api
 
-class MainWindow(QMainWindow):
-    
+class MainWindow(QMainWindow):        
+
     def addAndLoadFile(filePath, hexView=False):
         tab = TextTabItem()
         tab.filePath=filePath

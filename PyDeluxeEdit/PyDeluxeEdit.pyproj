@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>339b9cb4-d36a-4d87-9b5d-d283f74fb147</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>initapp.py</StartupFile>
+    <StartupFile>main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,8 +22,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="api.py" />
-    <Compile Include="class1.py" />
-    <Compile Include="initapp.py" />
+    <Compile Include="main.py" />
+    <Compile Include="mainWindow.py" />
     <Compile Include="models.py" />
     <Compile Include="util.py" />
     <Compile Include="window.py" />
