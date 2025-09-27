@@ -11,6 +11,8 @@
     <OutputPath>.</OutputPath>
     <Name>PyDeluxeEdit</Name>
     <RootNamespace>PyDeluxeEdit</RootNamespace>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -26,7 +28,6 @@
     <Compile Include="mainWindow.py" />
     <Compile Include="models.py" />
     <Compile Include="util.py" />
-    <Compile Include="window.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="deluxeedit.png" />
