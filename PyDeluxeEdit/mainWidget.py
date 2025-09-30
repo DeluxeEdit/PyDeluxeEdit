@@ -1,26 +1,28 @@
 from os import path
 from typing import Self
-from PyQt6.QtWidgets import QTabWidget, QMainWindow,QMenuBar, QFileDialog, QStatusBar, QToolBar,QListWidget
+from PyQt6.QtWidgets import QWidget,QTabWidget, QMainWindow,QMenuBar, QFileDialog, QStatusBar, QToolBar,QListWidget
 from PyQt6.QtGui import QIcon, QAction
 from models import TextTabItem, Tabs
 from api import Api
 
-class MainWindow(QMainWindow):        
+class MainWidget(QWidget,QMainWindow ):        
 
-    def addAndLoadFile(filePath, hexView=False):
+    def addAndLoadFile(filePath, hexView=False, isNewFile=False):
         tab = TextTabItem()
         tab.filePath=filePath
         Self.tabFiles.addTab(tab, path.basename(filePath))
         Self.tabs.allTabs.append(tab)
-        tab.text.append(Self.api.loadFile(filePath, hexView))
-        formats= tab.text.document().allFormats()
+        if  isNewFile:
+            tab.isNewFile=True
+        else:
+            tab.text.append(Self.api.loadFil3e(filePath, hexView))
         
         Self.status.showMessage("File:", filePath)
     
     def doNewFile(filePath):
         tab = TextTabItem()
         tab.filePath=filePath
-        tab.isNewFile=True
+       
         Self.tabFiles.addTab(tab, path.basename(filePath))
         Self.tabs.allTabs.append(tab)
         
@@ -30,7 +32,7 @@ class MainWindow(QMainWindow):
         dialog.setNameFilter("New File", "All files (*.*)")
         if dialog.exec():
             filePath = dialog.selectFile
-            Self.doNewFile(filePath)
+            Self.addAndLoadFile(filePath, False, True)
                
 
     def openFileDialog(hexView=False):
