@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>339b9cb4-d36a-4d87-9b5d-d283f74fb147</ProjectGuid>
+    <ProjectGuid>461530e7-edd4-455b-b0bf-aae33bb23b48</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>main.py</StartupFile>
     <SearchPath>
@@ -11,8 +11,6 @@
     <OutputPath>.</OutputPath>
     <Name>PyDeluxeEdit</Name>
     <RootNamespace>PyDeluxeEdit</RootNamespace>
-    <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -27,6 +25,7 @@
     <Compile Include="main.py" />
     <Compile Include="mainWindow.py" />
     <Compile Include="models.py" />
+    <Compile Include="PyDeluxeEdit.py" />
     <Compile Include="util.py" />
   </ItemGroup>
   <ItemGroup>
