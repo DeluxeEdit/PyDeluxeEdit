@@ -1,7 +1,8 @@
 import sys
 from PyQt6.QtWidgets import QApplication
 from PyQt6.QtCore import Qt
-from mainWindow import MainWindow
+from mainWidget import MainWidget
+import mainWidget
 
 
 
@@ -15,7 +16,7 @@ app = QApplication(sys.argv)
     
 
 
-win=MainWindow()
+win=MainWidget()
 win.show()
 sys.exit(app.exec())
 

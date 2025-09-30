@@ -5,7 +5,8 @@ from PyQt6.QtGui import QIcon, QAction
 from models import TextTabItem, Tabs
 from api import Api
 
-class MainWidget(QWidget,QMainWindow ):        
+class MainWidget(QWidget):
+    QMainWindow
 
     def addAndLoadFile(filePath, hexView=False, isNewFile=False):
         tab = TextTabItem()
@@ -51,8 +52,10 @@ class MainWidget(QWidget,QMainWindow ):
     def doHexView():
         Self.openFileDialog(True)
     
- 
- 
+
+
+     
+    
     def setMenu():
         bar = QMenuBar()
         file = bar.addMenu("File")
@@ -75,17 +78,22 @@ class MainWidget(QWidget,QMainWindow ):
     def __init__(self):
         super().__init__()
 
-        self.status = QStatusBar()
+        win=QMainWindow()
+        self.window=win
 
+        self.status = QStatusBar()
         self.status.messageChanged.connect(self.statusChanged)
         self.status.addPermanentWidget(self)
+    
         self.toolbar = QToolBar("Log")
         self.log = QListWidget(self)
         self.toolbar.addWidget(self.log)
         self.addToolBar(self.toolbar)
+        
         self.tabs=Tabs()
-        self.setCentralWidget(self.tabs.tabFiles)
+        win.setCentralWidget(self.tabs.tabFiles)
         self.api = Api()
         self.setMenu
         self.setWindowTitle("PyQt6 - Codeloop.org")
         self.setWindowIcon(QIcon("deluxeedit.png"))
+
