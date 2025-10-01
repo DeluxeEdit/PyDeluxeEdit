@@ -6,7 +6,6 @@ from models import TextTabItem, Tabs
 from api import Api
 
 class MainWidget(QWidget):
-    QMainWindow
 
     def addAndLoadFile(filePath, hexView=False, isNewFile=False):
         tab = TextTabItem()
@@ -19,15 +18,9 @@ class MainWidget(QWidget):
             tab.text.append(Self.api.loadFil3e(filePath, hexView))
         
         Self.status.showMessage("File:", filePath)
-    
-    def doNewFile(filePath):
-        tab = TextTabItem()
-        tab.filePath=filePath
-       
-        Self.tabFiles.addTab(tab, path.basename(filePath))
-        Self.tabs.allTabs.append(tab)
+ 
         
-    def newFileDialog():
+    def showNewFileDialog():
         dialog = QFileDialog(Self)
         dialog.setFileMode(QFileDialog.FileMode.AnyFile)
         dialog.setNameFilter("New File", "All files (*.*)")
@@ -70,15 +63,16 @@ class MainWidget(QWidget):
         file.addAction(save, Self.saveAsDialog)
         file.addAction(openMenu, Self.openFileDialog)
         file.addAction(hexViewMenu, Self.doHexView)
-        file.addAction(newMenu, Self.newFileDialog)
+        file.addAction(newMenu, Self.showNewFileDialog)
         bar.show()
+
     def statusChanged(text):
         Self.log.addItem(text)
 
     def __init__(self):
         super().__init__()
 
-        win=QMainWindow()
+        win=QMainWindow(self)
         self.window=win
 
         self.status = QStatusBar()
@@ -88,7 +82,7 @@ class MainWidget(QWidget):
         self.toolbar = QToolBar("Log")
         self.log = QListWidget(self)
         self.toolbar.addWidget(self.log)
-        self.addToolBar(self.toolbar)
+        win.addToolBar(self.toolbar)
         
         self.tabs=Tabs()
         win.setCentralWidget(self.tabs.tabFiles)
