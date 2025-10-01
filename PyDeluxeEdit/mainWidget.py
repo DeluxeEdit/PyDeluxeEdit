@@ -7,7 +7,7 @@ from api import Api
 
 class MainWidget(QWidget):
 
-    def addAndLoadFile(filePath, hexView=False, isNewFile=False):
+    def addFile(filePath, hexView=False, isNewFile=False):
         tab = TextTabItem()
         tab.filePath=filePath
         Self.tabFiles.addTab(tab, path.basename(filePath))
@@ -26,7 +26,7 @@ class MainWidget(QWidget):
         dialog.setNameFilter("New File", "All files (*.*)")
         if dialog.exec():
             filePath = dialog.selectFile
-            Self.addAndLoadFile(filePath, False, True)
+            Self.addFile(filePath, False, True)
                
 
     def openFileDialog(hexView=False):
@@ -35,7 +35,7 @@ class MainWidget(QWidget):
         dialog.setNameFilter("Open File", "All files (*.*)")
         if dialog.exec():
                 filePath = dialog.selectFile
-                Self. addAndLoadFile(filePath, hexView)
+                Self. addFile(filePath, hexView)
 
     def saveAsDialog():
         filePath = QFileDialog.getSaveFileName(Self, "Save File", "All Files(*);;Text Files(*.txt)")
