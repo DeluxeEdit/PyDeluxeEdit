@@ -5,7 +5,7 @@ from PyQt6.QtGui import QIcon, QAction
 from models import TextTabItem, Tabs
 from api import Api
 
-class MainWidget(QWidget):
+class MainWidget(QMainWindow):
 
     def addFile(filePath, hexView=False, isNewFile=False):
         tab = TextTabItem()
@@ -72,9 +72,7 @@ class MainWidget(QWidget):
     def __init__(self):
         super().__init__()
 
-        win=QMainWindow(self)
-        self.window=win
-
+ 
         self.status = QStatusBar()
         self.status.messageChanged.connect(self.statusChanged)
         self.status.addPermanentWidget(self)
@@ -82,12 +80,15 @@ class MainWidget(QWidget):
         self.toolbar = QToolBar("Log")
         self.log = QListWidget(self)
         self.toolbar.addWidget(self.log)
-        win.addToolBar(self.toolbar)
+        self.addToolBar(self.toolbar)
         
         self.tabs=Tabs()
-        win.setCentralWidget(self.tabs.tabFiles)
+        self.setCentralWidget(self.tabs.tabFiles)
         self.api = Api()
         self.setMenu
         self.setWindowTitle("PyQt6 - Codeloop.org")
         self.setWindowIcon(QIcon("deluxeedit.png"))
+        #self.window.show()
+
+
 

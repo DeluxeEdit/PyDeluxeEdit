@@ -29,6 +29,7 @@
     <Compile Include="util.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="deluxeedit.ico" />
     <Content Include="deluxeedit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
