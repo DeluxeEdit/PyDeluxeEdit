@@ -88,6 +88,7 @@ class MainWidget(QMainWindow):
         self.setMenu
         self.setWindowTitle("PyQt6 - Codeloop.org")
         self.setWindowIcon(QIcon("deluxeedit.png"))
+        self.show()
         #self.window.show()
 
 
