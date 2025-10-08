@@ -11,7 +11,8 @@ from PyQt6 import QtGui
    #     self.ui = clientGUI.Ui_MainWindow.setupUi(self)
         
         
-app = QApplication(sys.argv)
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
 #my=MyMainWindow()
 
        

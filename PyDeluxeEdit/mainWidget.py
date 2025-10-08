@@ -1,6 +1,6 @@
 from os import path
 from typing import Self
-from PyQt6.QtWidgets import QWidget,QTabWidget, QMainWindow,QMenuBar, QFileDialog, QStatusBar, QToolBar,QListWidget
+from PyQt6.QtWidgets import QWidget,QTabBar, QMainWindow,QMenuBar, QFileDialog, QStatusBar, QToolBar,QListWidget
 from PyQt6.QtGui import QIcon, QAction
 from models import TextTabItem, Tabs
 from api import Api
@@ -50,8 +50,8 @@ class MainWidget(QMainWindow):
      
     
     def setMenu():
-        bar = QMenuBar()
-        file = bar.addMenu("File")
+      
+        file =Self.menuBar.addMenu("File")
         newMenu= QAction("New")
         newMenu.setShortcut("Ctrl+N")
         openMenu = QAction("Open")
@@ -64,31 +64,32 @@ class MainWidget(QMainWindow):
         file.addAction(openMenu, Self.openFileDialog)
         file.addAction(hexViewMenu, Self.doHexView)
         file.addAction(newMenu, Self.showNewFileDialog)
-        bar.show()
+        Self.menuBar.show()
 
     def statusChanged(text):
         Self.log.addItem(text)
 
     def __init__(self):
         super().__init__()
-
+        self.menuBar=QMenuBar()
+        
  
-        self.status = QStatusBar()
-        self.status.messageChanged.connect(self.statusChanged)
-        self.status.addPermanentWidget(self)
+        self.statusBar  = QStatusBar()
+        self.statusBar.messageChanged.connect(self.statusChanged)
+        self.statusBar.addPermanentWidget(self)
     
-        self.toolbar = QToolBar("Log")
+        """     self.toolbar = QToolBar("Log")
         self.log = QListWidget(self)
         self.toolbar.addWidget(self.log)
         self.addToolBar(self.toolbar)
-        
+        """
         self.tabs=Tabs()
         self.setCentralWidget(self.tabs.tabFiles)
         self.api = Api()
         self.setMenu
         self.setWindowTitle("PyQt6 - Codeloop.org")
         self.setWindowIcon(QIcon("deluxeedit.png"))
-        self.show()
+        self.show
         #self.window.show()
 
 
