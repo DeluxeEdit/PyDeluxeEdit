@@ -1,12 +1,14 @@
 from os import path
 from typing import Self
-from PyQt6.QtWidgets import QWidget,QTabBar, QMainWindow,QMenuBar, QFileDialog, QStatusBar, QToolBar,QListWidget
+from PyQt6.QtWidgets import QWidget, QMainWindow,QMenuBar, QFileDialog, QStatusBar, QToolBar,QListWidget, uic
+from PyQt6 import uic  
 from PyQt6.QtGui import QIcon, QAction
 from models import TextTabItem, Tabs
 from api import Api
 
 class MainWidget(QMainWindow):
 
+      
     def addFile(filePath, hexView=False, isNewFile=False):
         tab = TextTabItem()
         tab.filePath=filePath
@@ -68,28 +70,30 @@ class MainWidget(QMainWindow):
 
     def statusChanged(text):
         Self.log.addItem(text)
+    
+    def loadProjectUi():
+        uic.load_ui(Api.ProjectUiFileName)
+        Self.show()
 
     def __init__(self):
         super().__init__()
         self.menuBar=QMenuBar()
         
- 
+       
         self.statusBar  = QStatusBar()
         self.statusBar.messageChanged.connect(self.statusChanged)
         self.statusBar.addPermanentWidget(self)
     
-        """     self.toolbar = QToolBar("Log")
-        self.log = QListWidget(self)
-        self.toolbar.addWidget(self.log)
+        toolbar = QToolBar("Log")
+        log = QListWidget(self)
+        toolbar.addWidget(log)
         self.addToolBar(self.toolbar)
-        """
+        
         self.tabs=Tabs()
         self.setCentralWidget(self.tabs.tabFiles)
         self.api = Api()
         self.setMenu
-        self.setWindowTitle("PyQt6 - Codeloop.org")
-        self.setWindowIcon(QIcon("deluxeedit.png"))
-        self.show
+      
         #self.window.show()
 
 
