@@ -71,9 +71,10 @@ class MainWidget(QMainWindow):
     def statusChanged(text):
         Self.log.addItem(text)
     
-    def loadProjectUi():
+    def loadProjectUi(showToo=False):
         uic.load_ui(Api.ProjectUiFileName)
-        Self.show()
+        if showToo:
+          Self.show()
 
     def __init__(self):
         super().__init__()

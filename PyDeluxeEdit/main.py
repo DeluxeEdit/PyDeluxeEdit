@@ -8,5 +8,6 @@ app = QApplication(sys.argv)
 #my=MyMainWindow()
 
 mainWidget =MainWidget()
+mainWidget.loadProjectUi()
 app.exec()
 
