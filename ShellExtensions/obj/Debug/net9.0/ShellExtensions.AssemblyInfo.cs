@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShellExtensions")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+585d5a1b324b25e18a678d9a8c1051307b6d6f47")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+924dc743637106c7f1874fdf897d301bec834561")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShellExtensions")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShellExtensions")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

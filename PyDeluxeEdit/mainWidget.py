@@ -1,7 +1,7 @@
 from os import path
 from typing import Self
-from PyQt6.QtWidgets import QWidget, QMainWindow,QMenuBar, QFileDialog, QStatusBar, QToolBar,QListWidget, uic
-from PyQt6 import uic  
+from PyQt6.QtWidgets import QWidget, QMainWindow,QMenuBar, QFileDialog, QStatusBar, QToolBar,QListWidget
+from PyQt6 import uic   
 from PyQt6.QtGui import QIcon, QAction
 from models import TextTabItem, Tabs
 from api import Api
@@ -72,7 +72,8 @@ class MainWidget(QMainWindow):
         Self.log.addItem(text)
     
     def loadProjectUi(showToo=False):
-        uic.load_ui(Api.ProjectUiFileName)
+        
+        uic.load_ui.loadUi(Api.ProjectUiFileName)
         if showToo:
           Self.show()
 
@@ -88,7 +89,7 @@ class MainWidget(QMainWindow):
         toolbar = QToolBar("Log")
         log = QListWidget(self)
         toolbar.addWidget(log)
-        self.addToolBar(self.toolbar)
+        self.addToolBar(toolbar)
         
         self.tabs=Tabs()
         self.setCentralWidget(self.tabs.tabFiles)

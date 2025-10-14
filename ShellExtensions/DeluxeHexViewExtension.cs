@@ -11,7 +11,8 @@ namespace ShellExtensions
     /// The Count Lines Context Menu Extension
     /// </summary>
     public class DeluxeHexViewExtension : SharpContextMenu
-    {
+    {   
+        const CommandToRun=""
         protected override bool CanShowMenu()
         {
             //  We will always show the menu
