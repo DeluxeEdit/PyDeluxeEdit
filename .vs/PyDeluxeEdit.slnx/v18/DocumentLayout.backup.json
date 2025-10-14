@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\gitroot\\PyDeluxeEdit\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C828843A-4088-4ACC-B209-AC636488E3B3}|ShellExtensions\\ShellExtensions.csproj|c:\\gitroot\\pydeluxeedit\\shellextensions\\deluxehexviewextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C828843A-4088-4ACC-B209-AC636488E3B3}|ShellExtensions\\ShellExtensions.csproj|solutionrelative:shellextensions\\deluxehexviewextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C828843A-4088-4ACC-B209-AC636488E3B3}|ShellExtensions\\ShellExtensions.csproj|c:\\gitroot\\pydeluxeedit\\shellextensions\\deluxeeditextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C828843A-4088-4ACC-B209-AC636488E3B3}|ShellExtensions\\ShellExtensions.csproj|solutionrelative:shellextensions\\deluxeeditextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C828843A-4088-4ACC-B209-AC636488E3B3}|ShellExtensions\\ShellExtensions.csproj|c:\\gitroot\\pydeluxeedit\\shellextensions\\paths.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C828843A-4088-4ACC-B209-AC636488E3B3}|ShellExtensions\\ShellExtensions.csproj|solutionrelative:shellextensions\\paths.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C828843A-4088-4ACC-B209-AC636488E3B3}|ShellExtensions\\ShellExtensions.csproj|c:\\gitroot\\pydeluxeedit\\shellextensions\\iconhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C828843A-4088-4ACC-B209-AC636488E3B3}|ShellExtensions\\ShellExtensions.csproj|solutionrelative:shellextensions\\iconhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C828843A-4088-4ACC-B209-AC636488E3B3}|ShellExtensions\\ShellExtensions.csproj|c:\\gitroot\\pydeluxeedit\\shellextensions\\shellextensions.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{C828843A-4088-4ACC-B209-AC636488E3B3}|ShellExtensions\\ShellExtensions.csproj|solutionrelative:shellextensions\\shellextensions.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C828843A-4088-4ACC-B209-AC636488E3B3}|ShellExtensions\\ShellExtensions.csproj|c:\\gitroot\\pydeluxeedit\\shellextensions\\shellextensions.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C828843A-4088-4ACC-B209-AC636488E3B3}|ShellExtensions\\ShellExtensions.csproj|solutionrelative:shellextensions\\shellextensions.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pierr\\.nuget\\packages\\asystem.windows.forms\\1.0.0\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
@@ -17,19 +37,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ShellExtensions",
+              "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\ShellExtensions\\ShellExtensions.csproj",
+              "RelativeDocumentMoniker": "ShellExtensions\\ShellExtensions.csproj",
+              "ToolTip": "C:\\gitroot\\PyDeluxeEdit\\ShellExtensions\\ShellExtensions.csproj",
+              "RelativeToolTip": "ShellExtensions\\ShellExtensions.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-14T11:21:31.331Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DeluxeHexViewExtension.cs",
+              "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\ShellExtensions\\DeluxeHexViewExtension.cs",
+              "RelativeDocumentMoniker": "ShellExtensions\\DeluxeHexViewExtension.cs",
+              "ToolTip": "C:\\gitroot\\PyDeluxeEdit\\ShellExtensions\\DeluxeHexViewExtension.cs",
+              "RelativeToolTip": "ShellExtensions\\DeluxeHexViewExtension.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T11:55:56.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Paths.cs",
+              "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\ShellExtensions\\Paths.cs",
+              "RelativeDocumentMoniker": "ShellExtensions\\Paths.cs",
+              "ToolTip": "C:\\gitroot\\PyDeluxeEdit\\ShellExtensions\\Paths.cs",
+              "RelativeToolTip": "ShellExtensions\\Paths.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAwwAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T11:47:00.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IconHandler.cs",
+              "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\ShellExtensions\\IconHandler.cs",
+              "RelativeDocumentMoniker": "ShellExtensions\\IconHandler.cs",
+              "ToolTip": "C:\\gitroot\\PyDeluxeEdit\\ShellExtensions\\IconHandler.cs",
+              "RelativeToolTip": "ShellExtensions\\IconHandler.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T11:39:53.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ShellExtensions",
+              "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\ShellExtensions\\ShellExtensions.csproj",
+              "RelativeDocumentMoniker": "ShellExtensions\\ShellExtensions.csproj",
+              "ToolTip": "C:\\gitroot\\PyDeluxeEdit\\ShellExtensions\\ShellExtensions.csproj",
+              "RelativeToolTip": "ShellExtensions\\ShellExtensions.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-14T11:06:03.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "DeluxeEditExtension.cs",
               "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\ShellExtensions\\DeluxeEditExtension.cs",
               "RelativeDocumentMoniker": "ShellExtensions\\DeluxeEditExtension.cs",
               "ToolTip": "C:\\gitroot\\PyDeluxeEdit\\ShellExtensions\\DeluxeEditExtension.cs",
               "RelativeToolTip": "ShellExtensions\\DeluxeEditExtension.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T10:36:30.906Z",
+              "WhenOpened": "2025-10-14T10:40:37.45Z",
               "EditorCaption": ""
             },
             {
@@ -46,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "readme.txt",
               "DocumentMoniker": "C:\\Users\\pierr\\.nuget\\packages\\asystem.windows.forms\\1.0.0\\readme.txt",
               "RelativeDocumentMoniker": "..\\..\\Users\\pierr\\.nuget\\packages\\asystem.windows.forms\\1.0.0\\readme.txt",
