@@ -23,6 +23,7 @@ namespace ShellExtensions
         {
             //  Create the menu strip
             var menu = new ContextMenuStrip();
+            
           
             //  Create a 'count lines' item
             var itemCountLines = new ToolStripMenuItem

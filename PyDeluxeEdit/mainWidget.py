@@ -8,7 +8,9 @@ from api import Api
 
 class MainWidget(QMainWindow):
 
-      
+    def autoLoadFile(filePath, hexView=False):
+      Self.addFile(filePath, hexView)
+
     def addFile(filePath, hexView=False, isNewFile=False):
         tab = TextTabItem()
         tab.filePath=filePath
