@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms
+using System.Windows.Forms;
 namespace ShellExtensions
 {
     /// <summary>
@@ -12,6 +12,8 @@ namespace ShellExtensions
     /// </summary>
     public class DeluxeEditExtension : SharpContextMenu
     {
+        const string CommandToRun = "";
+
         protected override bool CanShowMenu()
         {
             //  We will always show the menu
@@ -55,15 +57,7 @@ namespace ShellExtensions
             //  Show the output
             MessageBox.Show(builder.ToString());
         }
-        protected override bool CanShowMenu()
-        {
-            throw new NotImplementedException();
-        }
-
-        protected override System.Windows.Forms.ContextMenuStrip CreateMenu()
-        {
-            throw new NotImplementedException();
-        }
+     
     }
 
 }
