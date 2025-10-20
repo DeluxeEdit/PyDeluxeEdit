@@ -10,5 +10,4 @@
     <Platform Project="AnyCPU" />
     <Build Project="false" />
   </Project>
-  <Project Path="ShellExtensions/ShellExtensions.csproj" Id="c828843a-4088-4acc-b209-ac636488e3b3" />
 </Solution>
