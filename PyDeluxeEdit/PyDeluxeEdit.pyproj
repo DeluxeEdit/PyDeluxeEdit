@@ -32,6 +32,13 @@
     <Content Include="deluxeedit.ico" />
     <Content Include="deluxeedit.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShellExtensions\ShellExtensions.csproj">
+      <Name>ShellExtensions</Name>
+      <Project>{c828843a-4088-4acc-b209-ac636488e3b3}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
        Visual Studio and specify your pre- and post-build commands in

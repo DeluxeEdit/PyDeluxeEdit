@@ -1,0 +1,13 @@
+C:\gitroot\PyDeluxeEdit\ShellExtensions\obj\Debug\net10.0-windows\ShellExtensions.csproj.AssemblyReference.cache
+C:\gitroot\PyDeluxeEdit\ShellExtensions\obj\Debug\net10.0-windows\ShellExtensions.GeneratedMSBuildEditorConfig.editorconfig
+C:\gitroot\PyDeluxeEdit\ShellExtensions\obj\Debug\net10.0-windows\ShellExtensions.AssemblyInfoInputs.cache
+C:\gitroot\PyDeluxeEdit\ShellExtensions\obj\Debug\net10.0-windows\ShellExtensions.AssemblyInfo.cs
+C:\gitroot\PyDeluxeEdit\ShellExtensions\obj\Debug\net10.0-windows\ShellExtensions.csproj.CoreCompileInputs.cache
+C:\gitroot\PyDeluxeEdit\ShellExtensions\obj\Debug\net10.0-windows\ShellExtensions.sourcelink.json
+C:\gitroot\PyDeluxeEdit\ShellExtensions\bin\Debug\net10.0-windows\ShellExtensions.deps.json
+C:\gitroot\PyDeluxeEdit\ShellExtensions\bin\Debug\net10.0-windows\ShellExtensions.dll
+C:\gitroot\PyDeluxeEdit\ShellExtensions\bin\Debug\net10.0-windows\ShellExtensions.pdb
+C:\gitroot\PyDeluxeEdit\ShellExtensions\obj\Debug\net10.0-windows\ShellExtensions.dll
+C:\gitroot\PyDeluxeEdit\ShellExtensions\obj\Debug\net10.0-windows\refint\ShellExtensions.dll
+C:\gitroot\PyDeluxeEdit\ShellExtensions\obj\Debug\net10.0-windows\ShellExtensions.pdb
+C:\gitroot\PyDeluxeEdit\ShellExtensions\obj\Debug\net10.0-windows\ref\ShellExtensions.dll

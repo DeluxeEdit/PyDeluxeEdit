@@ -16,6 +16,5 @@ if sys.argv.count>=2   and "--hex" in  sys.argv:
 mainWidget =MainWidget()
 if autoloadPath:
     mainWidget.autoLoadFile(autoloadPath, autoLoadHex)
-mainWidget.loadProjectUi()
 app.exec()
 

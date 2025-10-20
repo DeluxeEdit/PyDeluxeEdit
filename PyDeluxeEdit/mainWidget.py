@@ -72,13 +72,14 @@ class MainWidget(QMainWindow):
 
     def statusChanged(text):
         Self.log.addItem(text)
-    
+
+
     def loadProjectUi(showToo=False):
-        
         uic.load_ui.loadUi(Api.ProjectUiFileName)
         if showToo:
-          Self.show()
+            Self.show()
 
+    
     def __init__(self):
         super().__init__()
         self.menuBar=QMenuBar()
@@ -97,8 +98,10 @@ class MainWidget(QMainWindow):
         self.setCentralWidget(self.tabs.tabFiles)
         self.api = Api()
         self.setMenu
+        self.loadProjectUi(True)
       
         #self.window.show()
+
 
 
 
