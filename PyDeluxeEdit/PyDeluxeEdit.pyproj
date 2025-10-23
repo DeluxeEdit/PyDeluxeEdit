@@ -31,6 +31,7 @@
   <ItemGroup>
     <Content Include="deluxeedit.ico" />
     <Content Include="deluxeedit.png" />
+    <Content Include="register.ps1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ShellExtensions\ShellExtensions.csproj">
