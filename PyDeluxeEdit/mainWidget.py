@@ -48,7 +48,7 @@ class MainWidget(QMainWindow):
             
     def doHexView():
         Self.openFileDialog(True)
-    
+  
 
 
      
@@ -79,6 +79,8 @@ class MainWidget(QMainWindow):
         if showToo:
             Self.show()
 
+    def loadShellExtesion():
+        q=""      
     
     def __init__(self):
         super().__init__()
