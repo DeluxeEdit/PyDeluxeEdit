@@ -11,8 +11,10 @@ if sys.argv.count>=1:
     autoloadPath= sys.argv[0]   
 if sys.argv.count>=2   and "--hex" in  sys.argv:  
     autoLoadHex=True
-    
-#my=MyMainWindow()
+  
+QApplication.setApplicationName('PyDeluxeEdit')
+QApplication.setApplicationVersion('0.9.0')
+
 mainWidget =MainWidget()
 if autoloadPath:
     mainWidget.autoLoadFile(autoloadPath, autoLoadHex)
