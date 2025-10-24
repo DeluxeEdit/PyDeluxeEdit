@@ -3,6 +3,10 @@ from unittest import result
 
 class Util:
     @staticmethod
+    def ExecuteCommand(cmd):
+        v=""    
+
+    @staticmethod
     def ByteToHexString(b):
         result=str.format(b, " {:02X} " ) 
         return result

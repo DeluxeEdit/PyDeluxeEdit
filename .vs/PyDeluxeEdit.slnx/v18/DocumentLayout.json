@@ -1,33 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\gitroot\\PyDeluxeEdit\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{461530E7-EDD4-455B-B0BF-AAE33BB23B48}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\main.py||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{461530E7-EDD4-455B-B0BF-AAE33BB23B48}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|solutionrelative:PyDeluxeEdit\\main.py||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{461530E7-EDD4-455B-B0BF-AAE33BB23B48}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\mainWidget.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{461530E7-EDD4-455B-B0BF-AAE33BB23B48}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|solutionrelative:PyDeluxeEdit\\mainWidget.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{461530E7-EDD4-455B-B0BF-AAE33BB23B48}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\register.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{461530E7-EDD4-455B-B0BF-AAE33BB23B48}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|solutionrelative:PyDeluxeEdit\\register.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|PyDeluxeEdit||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{461530E7-EDD4-455B-B0BF-AAE33BB23B48}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\api.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{461530E7-EDD4-455B-B0BF-AAE33BB23B48}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|solutionrelative:PyDeluxeEdit\\api.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pierr\\.nuget\\packages\\asystem.windows.forms\\1.0.0\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -35,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,90 +24,12 @@
               "Name": "ST:2:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "register.ps1",
-              "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\register.ps1",
-              "RelativeDocumentMoniker": "PyDeluxeEdit\\register.ps1",
-              "ToolTip": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\register.ps1",
-              "RelativeToolTip": "PyDeluxeEdit\\register.ps1",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-10-23T18:12:00.048Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Microsoft.Common.CurrentVersion.targets",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeDocumentMoniker": "..\\..\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeToolTip": "..\\..\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ViewState": "AgIAAEYHAAAAAAAAAAApwFAHAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-10-21T13:35:28.46Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "readme.txt",
-              "DocumentMoniker": "C:\\Users\\pierr\\.nuget\\packages\\asystem.windows.forms\\1.0.0\\readme.txt",
-              "RelativeDocumentMoniker": "..\\..\\Users\\pierr\\.nuget\\packages\\asystem.windows.forms\\1.0.0\\readme.txt",
-              "ToolTip": "C:\\Users\\pierr\\.nuget\\packages\\asystem.windows.forms\\1.0.0\\readme.txt",
-              "RelativeToolTip": "..\\..\\Users\\pierr\\.nuget\\packages\\asystem.windows.forms\\1.0.0\\readme.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-10-14T08:41:43.952Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PyDeluxeEdit",
-              "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\PyDeluxeEdit.pyproj",
-              "RelativeDocumentMoniker": "PyDeluxeEdit\\PyDeluxeEdit.pyproj",
-              "ToolTip": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\PyDeluxeEdit.pyproj",
-              "RelativeToolTip": "PyDeluxeEdit\\PyDeluxeEdit.pyproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-10-21T13:14:27.103Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "mainWidget.py",
-              "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\mainWidget.py",
-              "RelativeDocumentMoniker": "PyDeluxeEdit\\mainWidget.py",
-              "ToolTip": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\mainWidget.py",
-              "RelativeToolTip": "PyDeluxeEdit\\mainWidget.py",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAAFIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-10-16T10:20:44.375Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "api.py",
-              "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\api.py",
-              "RelativeDocumentMoniker": "PyDeluxeEdit\\api.py",
-              "ToolTip": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\api.py",
-              "RelativeToolTip": "PyDeluxeEdit\\api.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-10-14T13:41:48.407Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "main.py",
-              "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\main.py",
-              "RelativeDocumentMoniker": "PyDeluxeEdit\\main.py",
-              "ToolTip": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\main.py",
-              "RelativeToolTip": "PyDeluxeEdit\\main.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-10-14T12:25:47.325Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             }
           ]
         }
