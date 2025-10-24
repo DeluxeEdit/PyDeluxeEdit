@@ -1,10 +1,11 @@
-from unittest import result
+import os
 
 
 class Util:
     @staticmethod
-    def ExecuteCommand(cmd):
-        v=""    
+    def ExecuteShell(cmd):
+        os.system(cmd)
+  
 
     @staticmethod
     def ByteToHexString(b):

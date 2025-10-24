@@ -5,7 +5,7 @@ from PyQt6 import uic
 from PyQt6.QtGui import QIcon, QAction
 from models import TextTabItem, Tabs
 from api import Api
-
+from util import * 
 class MainWidget(QMainWindow):
 
     def autoLoadFile(filePath, hexView=False):
@@ -49,6 +49,9 @@ class MainWidget(QMainWindow):
     def doHexView():
         Self.openFileDialog(True)
   
+    def registerShellExtesions():
+        Util.ExecuteShell("powershell.exe register.ps1")
+
 
 
      
@@ -57,6 +60,7 @@ class MainWidget(QMainWindow):
       
         file =Self.menuBar.addMenu("File")
         newMenu= QAction("New")
+        registerMenu= QAction("Register Shell Extensions")
         newMenu.setShortcut("Ctrl+N")
         openMenu = QAction("Open")
         openMenu.setShortcut("Ctrl+O")
@@ -68,6 +72,7 @@ class MainWidget(QMainWindow):
         file.addAction(openMenu, Self.openFileDialog)
         file.addAction(hexViewMenu, Self.doHexView)
         file.addAction(newMenu, Self.showNewFileDialog)
+        file.addAction(registerMenu, Self.registerShellExtesions)
         Self.menuBar.show()
 
     def statusChanged(text):
@@ -78,9 +83,6 @@ class MainWidget(QMainWindow):
         uic.load_ui.loadUi(Api.ProjectUiFileName)
         if showToo:
             Self.show()
-
-    def loadShellExtesion():
-        q=""      
     
     def __init__(self):
         super().__init__()

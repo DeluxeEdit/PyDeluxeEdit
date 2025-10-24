@@ -1,3 +1,4 @@
+exit
 try
 {
  git -v
