@@ -55,9 +55,7 @@ class MainWidget(QMainWindow):
 
 
      
-    
     def setMenu():
-      
         file =Self.menuBar.addMenu("File")
         newMenu= QAction("New")
         registerMenu= QAction("Register Shell Extensions")
@@ -83,6 +81,9 @@ class MainWidget(QMainWindow):
     
     def __init__(self):
         super().__init__()
+
+        self.window=uic.load_ui.loadUi(Api.ProjectUiFileName)
+        
         self.menuBar=QMenuBar()
         
        
@@ -98,10 +99,10 @@ class MainWidget(QMainWindow):
         self.tabs=Tabs()
         self.setCentralWidget(self.tabs.tabFiles)
         self.api = Api()
-        self.setMenu
+        self.setMenu()
         
-        self.window=uic.load_ui.loadUi(Api.ProjectUiFileName)
         self.window.show()
+
 
 
 
