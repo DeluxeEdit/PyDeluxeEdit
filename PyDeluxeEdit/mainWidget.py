@@ -1,5 +1,4 @@
 from os import path
-from typing import Self
 from PyQt6.QtWidgets import QWidget, QMainWindow,QMenuBar, QFileDialog, QStatusBar, QToolBar,QListWidget
 from PyQt6 import uic   
 from PyQt6.QtGui import QIcon, QAction
@@ -8,55 +7,55 @@ from api import Api
 from util import * 
 class MainWidget(QMainWindow):
 
-    def autoLoadFile(filePath, hexView=False):
-      Self.addFile(filePath, hexView)
+    def autoLoadFile(self, filePath, hexView=False):
+      self.addFile(filePath, hexView)
 
-    def addFile(filePath, hexView=False, isNewFile=False):
+    def addFile(self,filePath, hexView=False, isNewFile=False):
         tab = TextTabItem()
         tab.filePath=filePath
-        Self.tabFiles.addTab(tab, path.basename(filePath))
-        Self.tabs.allTabs.append(tab)
+        self.tabFiles.addTab(tab, path.basename(filePath))
+        self.tabs.allTabs.append(tab)
         if  isNewFile:
             tab.isNewFile=True
         else:
-            tab.text.append(Self.api.loadFil3e(filePath, hexView))
+            tab.text.append(self.api.loadFile(filePath, hexView))
         
-        Self.status.showMessage("File:", filePath)
+        self.status.showMessage("File:", filePath)
  
         
-    def showNewFileDialog():
-        dialog = QFileDialog(Self)
+    def showNewFileDialog(self):
+        dialog = QFileDialog(self)
         dialog.setFileMode(QFileDialog.FileMode.AnyFile)
         dialog.setNameFilter("New File", "All files (*.*)")
         if dialog.exec():
             filePath = dialog.selectFile
-            Self.addFile(filePath, False, True)
+            self.addFile(filePath, False, True)
                
 
-    def openFileDialog(hexView=False):
-        dialog = QFileDialog(Self)
+    def openFileDialog(self,hexView=False):
+        dialog = QFileDialog(self)
         dialog.setFileMode(QFileDialog.FileMode.ExistingFiles)
         dialog.setNameFilter("Open File", "All files (*.*)")
         if dialog.exec():
                 filePath = dialog.selectFile
-                Self. addFile(filePath, hexView)
+                self. addFile(filePath, hexView)
 
-    def saveAsDialog():
-        filePath = QFileDialog.getSaveFileName(Self, "Save File", "All Files(*);;Text Files(*.txt)")
+    def saveAsDialog(self):
+        filePath = QFileDialog.getSaveFileName(self, "Save File", "All Files(*);;Text Files(*.txt)")
         if filePath:
-            Self.api.saveFile(filePath,Self.tabs.currentTab.text.document().toRawText())
+            self.api.saveFile(filePath,self.tabs.currentTab.text.document().toRawText())
             
-    def doHexView():
-        Self.openFileDialog(True)
+    def doHexView(self):
+        self.openFileDialog(True)
   
-    def registerShellExtesions():
+    def registerShellExtesions(self):
         Util.ExecuteShell("powershell.exe register.ps1")
 
 
 
      
-    def setMenu():
-        file =Self.menuBar.addMenu("File")
+    def setMenu(self):
+        file =self.menuBar.addMenu("File")
         newMenu= QAction("New")
         registerMenu= QAction("Register Shell Extensions")
         newMenu.setShortcut("Ctrl+N")
@@ -66,15 +65,15 @@ class MainWidget(QMainWindow):
         hexViewMenu.setShortcut("Ctrl+H")
         save = QAction("Save")
         save.setShortcut("Ctrl+S")
-        file.addAction(save, Self.saveAsDialog)
-        file.addAction(openMenu, Self.openFileDialog)
-        file.addAction(hexViewMenu, Self.doHexView)
-        file.addAction(newMenu, Self.showNewFileDialog)
-        file.addAction(registerMenu, Self.registerShellExtesions)
-        Self.menuBar.show()
+        file.addAction(save, self.saveAsDialog)
+        file.addAction(openMenu, self.openFileDialog)
+        file.addAction(hexViewMenu, self.doHexView)
+        file.addAction(newMenu, self.showNewFileDialog)
+        file.addAction(registerMenu, self.registerShellExtesions)
+        self.menuBar.show()
 
-    def statusChanged(text):
-        Self.log.addItem(text)
+    def statusChanged(self,text):
+        self.log.addItem(text)
 
 
       

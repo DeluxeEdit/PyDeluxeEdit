@@ -42,7 +42,8 @@
               "RelativeToolTip": "PyDeluxeEdit\\main.py",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-10-29T12:12:15.902Z"
+              "WhenOpened": "2025-10-29T12:12:15.902Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -52,7 +53,7 @@
               "RelativeDocumentMoniker": "PyDeluxeEdit\\mainWidget.py",
               "ToolTip": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\mainWidget.py",
               "RelativeToolTip": "PyDeluxeEdit\\mainWidget.py",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAGUAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAqwCYAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
               "WhenOpened": "2025-10-29T10:20:44.479Z",
               "EditorCaption": ""
