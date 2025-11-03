@@ -1,4 +1,5 @@
 from os import path
+from re import A
 from typing import Self
 from PyQt6.QtWidgets import QWidget, QMainWindow,QMenuBar, QMenu,QFileDialog, QStatusBar, QToolBar,QListWidget
 from PyQt6 import uic   
@@ -57,11 +58,9 @@ class MainWidget(QMainWindow):
      
     def setMenu(self):
         menuBar = self.menuBar()
-        # Creating menus using a QMenu object
+        # Creating menus
         fileMenu = QMenu("&File", self)
         menuBar.addMenu(fileMenu)
-        # Creating menus using a title
-
         newMenu = menuBar.addMenu("&New")
         editMenu = menuBar.addMenu("&Edit")
         saveMenu = menuBar.addMenu("&Save")
@@ -70,7 +69,8 @@ class MainWidget(QMainWindow):
         aboutMenu = menuBar.addMenu("&About")
         # Creating menus using a QMenu object
         menuBar.addMenu(fileMenu)
-        # Creating menus using a title
+       
+       # Creating actions
         newAction= QAction(self)
         aboutAction= QAction(self)
         registerAction= QAction(self)
@@ -79,8 +79,21 @@ class MainWidget(QMainWindow):
         openAction.setShortcut("Ctrl+O")
         hexViewAction = QAction(self)
         hexViewAction.setShortcut("Ctrl+H")
-        save = QAction(self)
-        save.setShortcut("Ctrl+S")
+        saveAction = QAction(self)
+        saveAction.setShortcut("Ctrl+S")
+        saveAsAction = QAction(self)
+        
+        # adding actions
+        newMenu.addAction(newAction )
+        editMenu.addAction(openAction )
+        saveMenu.addAction(saveAction )
+        saveAsMenu.addAction(saveAsAction )
+        newMenu.addAction(newAction )
+        registerMenu.addAction(newAction )
+        aboutMenu.addAction(aboutAction)
+ 
+        # Creating connection between
+        newAction.triggered.connect(self.showNewFileDialog)
         self.menuBar.show()
         
     def statusChanged(self,text):
