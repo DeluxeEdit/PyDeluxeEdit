@@ -1,5 +1,6 @@
 from os import path
-from PyQt6.QtWidgets import QWidget, QMainWindow,QMenuBar, QFileDialog, QStatusBar, QToolBar,QListWidget
+from typing import Self
+from PyQt6.QtWidgets import QWidget, QMainWindow,QMenuBar, QMenu,QFileDialog, QStatusBar, QToolBar,QListWidget
 from PyQt6 import uic   
 from PyQt6.QtGui import QIcon, QAction
 from models import TextTabItem, Tabs
@@ -55,23 +56,33 @@ class MainWidget(QMainWindow):
 
      
     def setMenu(self):
-        file =self.menuBar.addMenu("File")
-        newMenu= QAction("New")
-        registerMenu= QAction("Register Shell Extensions")
-        newMenu.setShortcut("Ctrl+N")
-        openMenu = QAction("Open")
-        openMenu.setShortcut("Ctrl+O")
-        hexViewMenu = QAction("Hex view")
-        hexViewMenu.setShortcut("Ctrl+H")
-        save = QAction("Save")
-        save.setShortcut("Ctrl+S")
-        file.addAction(save, self.saveAsDialog)
-        file.addAction(openMenu, self.openFileDialog)
-        file.addAction(hexViewMenu, self.doHexView)
-        file.addAction(newMenu, self.showNewFileDialog)
-        file.addAction(registerMenu, self.registerShellExtesions)
-        self.menuBar.show()
+        menuBar = self.menuBar()
+        # Creating menus using a QMenu object
+        fileMenu = QMenu("&File", self)
+        menuBar.addMenu(fileMenu)
+        # Creating menus using a title
 
+        newMenu = menuBar.addMenu("&New")
+        editMenu = menuBar.addMenu("&Edit")
+        saveMenu = menuBar.addMenu("&Save")
+        saveAsMenu = menuBar.addMenu("Save As")
+        registerMenu = menuBar.addMenu("Register Shell Extensions")
+        aboutMenu = menuBar.addMenu("&About")
+        # Creating menus using a QMenu object
+        menuBar.addMenu(fileMenu)
+        # Creating menus using a title
+        newAction= QAction(self)
+        aboutAction= QAction(self)
+        registerAction= QAction(self)
+        newAction.setShortcut("Ctrl+N")
+        openAction = QAction(self)
+        openAction.setShortcut("Ctrl+O")
+        hexViewAction = QAction(self)
+        hexViewAction.setShortcut("Ctrl+H")
+        save = QAction(self)
+        save.setShortcut("Ctrl+S")
+        self.menuBar.show()
+        
     def statusChanged(self,text):
         self.log.addItem(text)
 
@@ -79,10 +90,13 @@ class MainWidget(QMainWindow):
       
     
     def __init__(self):
+
         super().__init__()
 
         self.window=uic.load_ui.loadUi(Api.ProjectUiFileName)
         
+        menuBar = QMenuBar(self)
+        self.setMenuBar(menuBar)
         self.menuBar=QMenuBar()
         
        
