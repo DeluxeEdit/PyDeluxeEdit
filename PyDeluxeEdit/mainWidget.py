@@ -57,18 +57,28 @@ class MainWidget(QMainWindow):
 
      
     def setMenu(self):
-        menuBar = self.menuBar()
+        menuBar = self.menuBar
         # Creating menus
-        fileMenu = QMenu("&File", self)
+        fileMenu = QMenu("&File")
         menuBar.addMenu(fileMenu)
-        newMenu = menuBar.addMenu("&New")
-        editMenu = menuBar.addMenu("&Edit")
-        saveMenu = menuBar.addMenu("&Save")
-        saveAsMenu = menuBar.addMenu("Save As")
-        registerMenu = menuBar.addMenu("Register Shell Extensions")
-        aboutMenu = menuBar.addMenu("&About")
-        # Creating menus using a QMenu object
-        menuBar.addMenu(fileMenu)
+        newMenu = QMenu("&New", fileMenu)
+ 
+        editMenu = QMenu("&Edit", fileMenu )
+        saveMenu = QMenu("&Save",fileMenu)
+        saveAsMenu = QMenu("Save As", fileMenu)
+        registerMenu = QMenu("Register Shell Extensions", fileMenu)
+        aboutMenu = QMenu("&About", fileMenu)
+        
+        menuBar.addMenu(newMenu)
+        menuBar.addMenu(editMenu)
+        menuBar.addMenu(saveMenu)
+        menuBar.addMenu(saveAsMenu)
+        menuBar.addMenu(registerMenu)
+        menuBar.addMenu(aboutMenu)
+        
+        
+       # Creating menus using a QMenu object
+      
        
        # Creating actions
         newAction= QAction(self)
@@ -94,7 +104,7 @@ class MainWidget(QMainWindow):
  
         # Creating connection between
         newAction.triggered.connect(self.showNewFileDialog)
-        self.menuBar.show()
+        menuBar.show()
         
     def statusChanged(self,text):
         self.log.addItem(text)
