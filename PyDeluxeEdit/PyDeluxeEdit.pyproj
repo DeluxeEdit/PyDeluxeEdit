@@ -29,8 +29,10 @@
     <Compile Include="util.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="call.ps1" />
     <Content Include="deluxeedit.ico" />
     <Content Include="deluxeedit.png" />
+    <Content Include="PyDeluxeEdit.spec" />
     <Content Include="register.ps1" />
   </ItemGroup>
   <ItemGroup>
