@@ -6,7 +6,9 @@ from PyQt6 import uic
 from PyQt6.QtGui import QIcon, QAction
 from models import TextTabItem, Tabs
 from api import Api
-from util import * 
+from util import *
+from layout import Ui_MainWindow
+ #"from PySid.QtUiTools import QUiLoader
 class MainWidget(QMainWindow):
 
     def autoLoadFile(self, filePath, hexView=False):
@@ -59,10 +61,11 @@ class MainWidget(QMainWindow):
     def setMenu(self):
         menuBar = self.menuBar
         # Creating menus
-        fileMenu = QMenu("&File")
+        fileMenu = QMenu("&File", self)
         menuBar.addMenu(fileMenu)
+        """
+        my=menuBar.addMenu("&New")
         newMenu = QMenu("&New", fileMenu)
- 
         editMenu = QMenu("&Edit", fileMenu )
         saveMenu = QMenu("&Save",fileMenu)
         saveAsMenu = QMenu("Save As", fileMenu)
@@ -76,12 +79,11 @@ class MainWidget(QMainWindow):
         menuBar.addMenu(registerMenu)
         menuBar.addMenu(aboutMenu)
         
-        
        # Creating menus using a QMenu object
       
-       
+       """
        # Creating actions
-        newAction= QAction(self)
+        newAction= QAction("New")
         aboutAction= QAction(self)
         registerAction= QAction(self)
         newAction.setShortcut("Ctrl+N")
@@ -92,7 +94,7 @@ class MainWidget(QMainWindow):
         saveAction = QAction(self)
         saveAction.setShortcut("Ctrl+S")
         saveAsAction = QAction(self)
-        
+        """
         # adding actions
         newMenu.addAction(newAction )
         editMenu.addAction(openAction )
@@ -101,7 +103,7 @@ class MainWidget(QMainWindow):
         newMenu.addAction(newAction )
         registerMenu.addAction(newAction )
         aboutMenu.addAction(aboutAction)
- 
+""" 
         # Creating connection between
         newAction.triggered.connect(self.showNewFileDialog)
         menuBar.show()
@@ -116,9 +118,8 @@ class MainWidget(QMainWindow):
 
         super().__init__()
 
-        self.window=uic.load_ui.loadUi(Api.ProjectUiFileName)
-        
-        menuBar = QMenuBar(self)
+     #   self.window.ui.setupUi(self);                        
+        menuBar = QMenuBar()
         self.setMenuBar(menuBar)
         self.menuBar=QMenuBar()
         
@@ -136,6 +137,7 @@ class MainWidget(QMainWindow):
         self.setCentralWidget(self.tabs.tabFiles)
         self.api = Api()
         self.setMenu()
+        self.window=uic.load_ui.loadUi(Api.ProjectUiFileName)
         
         self.window.show()
 
