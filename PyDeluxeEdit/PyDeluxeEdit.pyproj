@@ -23,7 +23,7 @@
   <ItemGroup>
     <Compile Include="actions.py" />
     <Compile Include="api.py" />
-    <Compile Include="layout.py" />
+    <Compile Include="ui_mainwindow.py" />
     <Compile Include="main.py" />
     <Compile Include="mainWidget.py" />
     <Compile Include="models.py" />
