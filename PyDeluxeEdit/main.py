@@ -2,6 +2,8 @@ import sys
 from PyQt6.QtWidgets import QApplication
 from PyQt6 import QtGui
 from mainWidget import MainWidget       
+from PyQt6.QtWidgets import QMainWindow
+from ui_mainwindow import  Ui_MainWindow
         
 #if __name__ == "__main__":
 app = QApplication(sys.argv)
@@ -17,8 +19,11 @@ if argsLen >=2:
 QApplication.setApplicationName('PyDeluxeEdit')
 QApplication.setApplicationVersion('0.9.0')
 
-mainWidget =MainWidget()
+ui = Ui_MainWindow()
+ui.setupUi(QMainWindow())
+    
+
 if autoloadPath:
-    mainWidget.autoLoadFile(autoloadPath, autoLoadHex)
+    ui.autoLoadFile(autoloadPath, autoLoadHex)
 app.exec()
 

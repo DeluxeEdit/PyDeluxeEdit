@@ -23,6 +23,8 @@ class Ui_MainWindow(object):
     def statusChanged(self,text):
         self.log.addItem(text)
 
+    def autoLoadFile(self, filePath, hexView=False):
+        self.mainWidget.autoLoadFile( filePath,hexView)
   
     def setMenu(self):
         menuBar = self.menuBar
@@ -108,9 +110,9 @@ class Ui_MainWindow(object):
         self.api = Api()
         self.setMenu()
 
-        self.centralwidget = QtWidgets.QWidget(MainWindow)
-        self.centralwidget.setObjectName("centralwidget")
-        MainWindow.setCentralWidget(self.centralwidget)
+        #self.centralwidget = QtWidgets.QWidget(MainWindow)
+       # self.centralwidget.setObjectName("centralwidget")
+       # MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
