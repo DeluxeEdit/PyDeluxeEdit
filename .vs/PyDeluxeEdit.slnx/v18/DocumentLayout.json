@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\gitroot\\PyDeluxeEdit\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{461530E7-EDD4-455B-B0BF-AAE33BB23B48}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\register.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{461530E7-EDD4-455B-B0BF-AAE33BB23B48}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|solutionrelative:PyDeluxeEdit\\register.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{461530E7-EDD4-455B-B0BF-AAE33BB23B48}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\main.py||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{461530E7-EDD4-455B-B0BF-AAE33BB23B48}|PyDeluxeEdit\\PyDeluxeEdit.pyproj|solutionrelative:PyDeluxeEdit\\main.py||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
@@ -30,11 +34,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "mainWidget.py",
               "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\mainWidget.py",
               "RelativeDocumentMoniker": "PyDeluxeEdit\\mainWidget.py",
@@ -43,8 +47,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
               "WhenOpened": "2025-10-29T10:20:44.479Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -60,7 +63,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "register.ps1",
+              "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\register.ps1",
+              "RelativeDocumentMoniker": "PyDeluxeEdit\\register.ps1",
+              "ToolTip": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\register.ps1",
+              "RelativeToolTip": "PyDeluxeEdit\\register.ps1",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAIwB4AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T11:02:33.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ui_mainwindow.py",
               "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\ui_mainwindow.py",
               "RelativeDocumentMoniker": "PyDeluxeEdit\\ui_mainwindow.py",
@@ -68,12 +84,11 @@
               "RelativeToolTip": "PyDeluxeEdit\\ui_mainwindow.py",
               "ViewState": "AgIAABcAAAAAAAAAAAAqwBwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-11-06T11:22:06.914Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-06T11:22:06.914Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "PyDeluxeEdit.spec",
               "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\PyDeluxeEdit.spec",
               "RelativeDocumentMoniker": "PyDeluxeEdit\\PyDeluxeEdit.spec",
@@ -85,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "call.ps1",
               "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\call.ps1",
               "RelativeDocumentMoniker": "PyDeluxeEdit\\call.ps1",
@@ -97,16 +112,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "main.py",
               "DocumentMoniker": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\main.py",
               "RelativeDocumentMoniker": "PyDeluxeEdit\\main.py",
               "ToolTip": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\main.py",
               "RelativeToolTip": "PyDeluxeEdit\\main.py",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-10-29T12:12:15.902Z",
-              "EditorCaption": ""
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-29T12:12:15.902Z"
             }
           ]
         }

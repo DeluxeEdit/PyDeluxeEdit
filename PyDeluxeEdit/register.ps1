@@ -21,11 +21,14 @@ catch
  dotnet build
  $destDir= "$env:USERPROFILE\DeluxeShellExtensaions"
 $found =Test-Path $destDir
+
 if ($found=false) 
 {
 	md $destDir
 }
 cd $destDir
+
+RegAsmPath= "C:\Windows\Microsoft.NET\Framework64\v4.0.30319\RegAsm.exe"
 
 
 
