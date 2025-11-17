@@ -69,7 +69,7 @@
               "RelativeDocumentMoniker": "PyDeluxeEdit\\register.ps1",
               "ToolTip": "C:\\gitroot\\PyDeluxeEdit\\PyDeluxeEdit\\register.ps1",
               "RelativeToolTip": "PyDeluxeEdit\\register.ps1",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAIwB4AAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAIwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-11-13T11:02:33.188Z",
               "EditorCaption": ""
@@ -120,7 +120,8 @@
               "RelativeToolTip": "PyDeluxeEdit\\main.py",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-10-29T12:12:15.902Z"
+              "WhenOpened": "2025-10-29T12:12:15.902Z",
+              "EditorCaption": ""
             }
           ]
         }

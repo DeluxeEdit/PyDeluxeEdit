@@ -17,18 +17,17 @@ catch
 }
  
 
- git clone  https://github.com/DeluxeEdit/ShellExtensions.git
- dotnet build
- $destDir= "$env:USERPROFILE\DeluxeShellExtensaions"
-$found =Test-Path $destDir
+ $installDir= "$env:USERPROFILE\DeluxeShellExtensaions"
 
-if ($found=false) 
+if (Test-Path $installDir=false) 
 {
-	md $destDir
+	md $installDir
 }
-cd $destDir
-
-RegAsmPath= "C:\Windows\Microsoft.NET\Framework64\v4.0.30319\RegAsm.exe"
-
+cd $installDir
+git clone  https://github.com/DeluxeEdit/ShellExtensions.git
+dotnet build
+$foundAt=find ".dll" $installDir
+$RegAsmPath= "C:\Windows\Microsoft.NET\Framework64\v4.0.30319\RegAsm.exe"
+.\$RegAsmPath $foundAt
 
 
