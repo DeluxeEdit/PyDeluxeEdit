@@ -35,20 +35,22 @@ class Ui_MainWindow(object):
 # Posted by Karnisov
 # Retrieved 2025-11-06, License - CC BY-SA 3.0
 
-        menu = QMenu()
-        submenu = QMenu(menu)
-        submenu.setTitle("Submenu")
-        menu.addMenu(submenu)
-  
-        """
-        my=menuBar.addMenu("&New")
-        newMenu = QMenu("&New", fileMenu)
-        editMenu = QMenu("&Edit", fileMenu )
-        saveMenu = QMenu("&Save",fileMenu)
-        saveAsMenu = QMenu("Save As", fileMenu)
-        registerMenu = QMenu("Register Shell Extensions", fileMenu)
-        aboutMenu = QMenu("&About", fileMenu)
         
+        
+        newMenu = QMenu(fileMenu)
+        editMenu = QMenu(fileMenu )
+        saveMenu = QMenu(fileMenu)
+        saveAsMenu = QMenu(fileMenu)
+        registerMenu = QMenu(fileMenu)
+        aboutMenu = QMenu(fileMenu)
+        
+        newMenu.title="&New"
+        editMenu.title="&Edit"
+        saveMenu.title="&Save"
+        saveAsMenu="Save As"
+        registerMenu.title="Register Shell Extensions"
+        aboutMenu.title="&About"
+
         menuBar.addMenu(newMenu)
         menuBar.addMenu(editMenu)
         menuBar.addMenu(saveMenu)
@@ -58,9 +60,8 @@ class Ui_MainWindow(object):
         
        # Creating menus using a QMenu object
       
-       """
        # Creating actions
-        newAction= QAction("New")
+        newAction= QAction(self)
         aboutAction= QAction(self)
         registerAction= QAction(self)
         newAction.setShortcut("Ctrl+N")
@@ -71,7 +72,7 @@ class Ui_MainWindow(object):
         saveAction = QAction(self)
         saveAction.setShortcut("Ctrl+S")
         saveAsAction = QAction(self)
-        """
+        
         # adding actions
         newMenu.addAction(newAction )
         editMenu.addAction(openAction )
@@ -80,7 +81,7 @@ class Ui_MainWindow(object):
         newMenu.addAction(newAction )
         registerMenu.addAction(newAction )
         aboutMenu.addAction(aboutAction)
-        """ 
+        
         # Creating connection between
         newAction.triggered.connect(self.showNewFileDialog)
         menuBar.show()
