@@ -1,1 +1,1 @@
-pyinstaller.exe -n PyDeluxeEdit .\main.py --specpath . -i deluxeedit.ico
+pyinstaller.exe -n PyDeluxeEdit .\main.py --specpath . -i deluxeedit.ico --clean
