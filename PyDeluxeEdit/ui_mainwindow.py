@@ -85,15 +85,15 @@ class Ui_MainWindow(object):
         # Creating connection between
         newAction.triggered.connect(self.showNewFileDialog)
         menuBar.show()
+
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(798, 600)
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(".\\deluxeedit.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)
-        menuBar = QMenuBar()
-        self.setMenuBar(menuBar)
         self.menuBar=QMenuBar()
+        self.setMenuBar(self.menuBar)
         
         self.mainWidget =MainWidget()
 
