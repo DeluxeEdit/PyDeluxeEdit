@@ -64,9 +64,8 @@ class MainWidget(QWidget):
         super().__init__()
 
      #   self.window.ui.setupUi(self);                        
-        self.window=uic.load_ui.loadUi(Api.ProjectUiFileName)
+    #    self.window=uic.load_ui.loadUi(Api.ProjectUiFileName)
         
-        self.window.show()
 
 
 

@@ -89,17 +89,18 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(798, 600)
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(".\\deluxeedit.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        MainWindow.setWindowIcon(icon)
+        
+        
+       #
+       #icon.addPixmap(QtGui.QPixmap(), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        MainWindow.setWindowIcon(QtGui.QIcon("deluxeedit.png"))
         self.menuBar=QMenuBar()
-        self.setMenuBar(self.menuBar)
         
         self.mainWidget =MainWidget()
 
         self.statusBar  = QStatusBar()
         self.statusBar.messageChanged.connect(self.statusChanged)
-        self.statusBar.addPermanentWidget(self)
+        self.statusBar.addPermanentWidget(self.statusChanged)
     
         toolbar = QToolBar("Log")
         log = QListWidget(self)
