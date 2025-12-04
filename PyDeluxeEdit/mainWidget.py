@@ -21,7 +21,7 @@ class MainWidget(QWidget):
         else:
             tab.text.append(self.api.loadFile(filePath, hexView))
         
-        self.status.showMessage("File:", filePath)
+        self.statusBar.showMessage("File:", filePath)
  
         
     def showNewFileDialog(self):
@@ -59,7 +59,8 @@ class MainWidget(QWidget):
 
       
     
-    def __init__(self):
+    def __init__(self, status):
+        self.statusBar  =status
 
         super().__init__()
 

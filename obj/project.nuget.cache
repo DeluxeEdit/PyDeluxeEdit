@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "au7N+U5BVU4=",
+  "success": true,
+  "projectFilePath": "C:\\gitroot\\PyDeluxeEdit\\ShellExtensions.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pierr\\.nuget\\packages\\sharpshell\\2.7.2\\sharpshell.2.7.2.nupkg.sha512",
+    "C:\\Users\\pierr\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.17763.57\\microsoft.windows.sdk.net.ref.10.0.17763.57.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'SharpShell 2.7.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net10.0-windows10.0.17763'. This package may not be fully compatible with your project.",
+      "projectPath": "C:\\gitroot\\PyDeluxeEdit\\ShellExtensions.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\gitroot\\PyDeluxeEdit\\ShellExtensions.csproj",
+      "libraryId": "SharpShell",
+      "targetGraphs": [
+        "net10.0-windows10.0.17763"
+      ]
+    }
+  ]
+}

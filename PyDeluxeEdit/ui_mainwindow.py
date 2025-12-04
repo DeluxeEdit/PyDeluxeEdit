@@ -20,7 +20,7 @@ from mainWidget import MainWidget
 
 class Ui_MainWindow(object):
             
-    def statusChanged(self,text):
+    def o(self,text):
         self.log.addItem(text)
 
     def autoLoadFile(self, filePath, hexView=False):
@@ -95,13 +95,12 @@ class Ui_MainWindow(object):
        #icon.addPixmap(QtGui.QPixmap(), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(QtGui.QIcon("deluxeedit.png"))
         self.menuBar=QMenuBar()
-        
-        self.mainWidget =MainWidget()
-
         self.statusBar  = QStatusBar()
+        
+        self.mainWidget =MainWidget(self.statusBar)
+
         self.statusBar.messageChanged.connect(self.statusChanged)
-        self.statusBar.addPermanentWidget(self.statusChanged)
-    
+        
         toolbar = QToolBar("Log")
         log = QListWidget(self)
         toolbar.addWidget(log)
