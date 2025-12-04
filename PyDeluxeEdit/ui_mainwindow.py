@@ -86,6 +86,9 @@ class Ui_MainWindow(object):
         newAction.triggered.connect(self.showNewFileDialog)
         menuBar.show()
 
+    def statusChanged(self,text):
+        self.log.addItem(text)
+
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(798, 600)
