@@ -27,7 +27,7 @@ class Ui_MainWindow(object):
         self.mainWidget.autoLoadFile( filePath,hexView)
   
     def setMenu(self):
-        menuBar = self.menuBar
+        menuBar = self.MainWindow.menuBar
         # Creating menus
         fileMenu = QMenu("&File", self)
         menuBar.addMenu(fileMenu)
@@ -98,8 +98,7 @@ class Ui_MainWindow(object):
         #
         #icon.addPixmap(QtGui.QPixmap(), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.MainWindow.setWindowIcon(QtGui.QIcon("deluxeedit.png"))
-        self.menuBar=QMenuBar()
-        self.statusBar  = QStatusBar()
+        self.statusBar = QStatusBar()
         
         self.mainWidget =MainWidget(self.statusBar)
 
@@ -111,16 +110,18 @@ class Ui_MainWindow(object):
         self.MainWindow.addToolBar(toolbar)
         
         self.tabs=Tabs()
-        MainWindow.setCentralWidget(self.tabs.tabFiles)
+        self.MainWindow.setCentralWidget(self.tabs.tabFiles)
         self.api = Api()
+        self.MainWindow.menuBar=QMenuBar()
+       
         self.setMenu()
 
         #self.centralwidget = QtWidgets.QWidget(MainWindow)
        # self.centralwidget.setObjectName("centralwidget")
        # MainWindow.setCentralWidget(self.centralwidget)
 
-        self.retranslateUi(MainWindow)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        self.retranslateUi(self.MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(self.MainWindow)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
