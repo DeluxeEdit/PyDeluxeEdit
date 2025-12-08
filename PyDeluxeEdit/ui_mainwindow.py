@@ -105,7 +105,7 @@ class Ui_MainWindow(object):
         self.statusBar.messageChanged.connect(self.statusChanged)
         
         toolbar = QToolBar("Log")
-        log = QListWidget(self)
+        log = QListWidget()
         toolbar.addWidget(log)
         self.addToolBar(toolbar)
         
