@@ -16,14 +16,14 @@ if argsLen >=2:
     if argsLen>=3   and "--hex" in  sys.argv:  
         autoLoadHex=True
   
-QApplication.setApplicationName('PyDeluxeEdit')
-QApplication.setApplicationVersion('0.9.0')
+QApplication.setApplicationName("PyDeluxeEdit")
+QApplication.setApplicationVersion("0.9.0")
 
 ui = Ui_MainWindow()
-ui.setupUi()
+#ui.setupUi()
     
 
 if autoloadPath:
     ui.autoLoadFile(autoloadPath, autoLoadHex)
-app.exec()
 
+sys.exit(app.exec_())

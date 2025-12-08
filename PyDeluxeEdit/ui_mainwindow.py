@@ -90,14 +90,14 @@ class Ui_MainWindow(object):
         self.log.addItem(text)
 
     def setupUi(self):
-        MainWindow=QMainWindow()
-        MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(798, 600)
+        self.MainWindow=QMainWindow()
+        self. MainWindow.setWindowTitle("PyDeluxeEdit")
+        self.MainWindow.resize(798, 600)
         
         
-       #
-       #icon.addPixmap(QtGui.QPixmap(), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        MainWindow.setWindowIcon(QtGui.QIcon("deluxeedit.png"))
+        #
+        #icon.addPixmap(QtGui.QPixmap(), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.MainWindow.setWindowIcon(QtGui.QIcon("deluxeedit.png"))
         self.menuBar=QMenuBar()
         self.statusBar  = QStatusBar()
         
@@ -108,10 +108,10 @@ class Ui_MainWindow(object):
         toolbar = QToolBar("Log")
         log = QListWidget()
         toolbar.addWidget(log)
-        MainWindow.addToolBar(toolbar)
+        self.MainWindow.addToolBar(toolbar)
         
         self.tabs=Tabs()
-        MainWindow        .setCentralWidget(self.tabs.tabFiles)
+        MainWindow.setCentralWidget(self.tabs.tabFiles)
         self.api = Api()
         self.setMenu()
 
@@ -128,12 +128,14 @@ class Ui_MainWindow(object):
 
     def __init__(self):
         super().__init__()
+        self.setupUi()     
+        self.MainWindow.show()
         
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
+    ui.setupUi()
     MainWindow.show()
     sys.exit(app.exec_())
