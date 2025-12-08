@@ -89,7 +89,8 @@ class Ui_MainWindow(object):
     def statusChanged(self,text):
         self.log.addItem(text)
 
-    def setupUi(self, MainWindow):
+    def setupUi(self):
+        MainWindow=QMainWindow()
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(798, 600)
         
@@ -107,10 +108,10 @@ class Ui_MainWindow(object):
         toolbar = QToolBar("Log")
         log = QListWidget()
         toolbar.addWidget(log)
-        self.addToolBar(toolbar)
+        MainWindow.addToolBar(toolbar)
         
         self.tabs=Tabs()
-        self.setCentralWidget(self.tabs.tabFiles)
+        MainWindow        .setCentralWidget(self.tabs.tabFiles)
         self.api = Api()
         self.setMenu()
 

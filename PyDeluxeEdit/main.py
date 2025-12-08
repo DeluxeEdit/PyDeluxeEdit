@@ -20,7 +20,7 @@ QApplication.setApplicationName('PyDeluxeEdit')
 QApplication.setApplicationVersion('0.9.0')
 
 ui = Ui_MainWindow()
-ui.setupUi(QMainWindow())
+ui.setupUi()
     
 
 if autoloadPath:

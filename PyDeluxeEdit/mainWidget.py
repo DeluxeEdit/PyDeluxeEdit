@@ -60,9 +60,10 @@ class MainWidget(QWidget):
       
     
     def __init__(self, status):
+        super().__init__()
+
         self.statusBar  =status
 
-        super().__init__()
 
      #   self.window.ui.setupUi(self);                        
     #    self.window=uic.load_ui.loadUi(Api.ProjectUiFileName)
