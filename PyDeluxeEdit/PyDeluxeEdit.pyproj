@@ -2,9 +2,9 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>461530e7-edd4-455b-b0bf-aae33bb23b48</ProjectGuid>
+    <ProjectGuid>3293df85-d040-4eb2-be07-7588a47141f8</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>main.py</StartupFile>
+    <StartupFile>PyDeluxeEdit.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,26 +22,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="actions.py" />
-    <Compile Include="api.py" />
-    <Compile Include="ui_mainwindow.py" />
     <Compile Include="main.py" />
-    <Compile Include="mainWidget.py" />
-    <Compile Include="models.py" />
-    <Compile Include="util.py" />
+    <Compile Include="PyDeluxeEdit.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="call.ps1" />
     <Content Include="deluxeedit.ico" />
     <Content Include="deluxeedit.png" />
     <Content Include="PyDeluxeEdit.spec" />
+    <Content Include="PyDeluxeEdit.ui" />
     <Content Include="register.ps1" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ShellExtensions\ShellExtensions.csproj">
-      <Name>ShellExtensions</Name>
-      <Project>{c828843a-4088-4acc-b209-ac636488e3b3}</Project>
-      <Private>True</Private>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
