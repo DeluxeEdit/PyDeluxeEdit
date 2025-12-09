@@ -5,7 +5,7 @@ from chardet.universaldetector import UniversalDetector
 from util import * 
 class Api:
     ReadBufferSizeBytes = 32 * 1024
-    ProjectUiFileName=".\\PyDeluxeEdit.ui"
+    #ProjectUiFileName=".\\PyDeluxeEdit.ui"
     
     def saveFile(filePath, text):
               with open(filePath, 'w') as f:
