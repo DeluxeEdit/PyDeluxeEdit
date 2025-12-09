@@ -2,15 +2,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>3293df85-d040-4eb2-be07-7588a47141f8</ProjectGuid>
+    <ProjectGuid>584b83c8-51d7-4092-8265-b46373a760e1</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>main.py</StartupFile>
+    <StartupFile>start.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>PyDeluxeEdit</Name>
-    <RootNamespace>PyDeluxeEdit</RootNamespace>
+    <Name>DeluxeEdit</Name>
+    <RootNamespace>DeluxeEdit</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,18 +23,17 @@
   <ItemGroup>
     <Compile Include="actions.py" />
     <Compile Include="api.py" />
-    <Compile Include="main.py" />
+    <Compile Include="DeluxeEdit.py" />
+    <Compile Include="start.py" />
     <Compile Include="mainWidget.py" />
     <Compile Include="models.py" />
-    <Compile Include="PyDeluxeEdit.py" />
     <Compile Include="ui_mainwindow.py" />
     <Compile Include="util.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="call.ps1" />
     <Content Include="deluxeedit.png" />
-    <Content Include="PyDeluxeEdit.spec" />
-    <Content Include="PyDeluxeEdit.ui" />
+    <Content Include="DeluxeEdit.spec" />
     <Content Include="register.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

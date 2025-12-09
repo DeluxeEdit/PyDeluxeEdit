@@ -16,7 +16,7 @@ if argsLen >=2:
     if argsLen>=3   and "--hex" in  sys.argv:  
         autoLoadHex=True
   
-QApplication.setApplicationName("PyDeluxeEdit")
+QApplication.setApplicationName("DeluxeEdit")
 QApplication.setApplicationVersion("0.9.0")
 
 ui = Ui_MainWindow()
