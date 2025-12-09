@@ -95,14 +95,11 @@ class Ui_MainWindow(object):
         self.MainWindow.resize(798, 600)
         
         
-        #
-        #icon.addPixmap(QtGui.QPixmap(), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.MainWindow.setWindowIcon(QtGui.QIcon("deluxeedit.png"))
-        self.statusBar = QStatusBar()
-        
-        self.mainWidget =MainWidget(self.statusBar)
-
-        self.statusBar.messageChanged.connect(self.statusChanged)
+        self.MainWindow.statusBar=QStatusBar()
+        self.MainWindow.statusBar.messageChanged.connect(self.statusChanged)
+ 
+        self.mainWidget =MainWidget(self.MainWindow.statusBar)
         
         toolbar = QToolBar("Log")
         log = QListWidget()
