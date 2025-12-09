@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>3293df85-d040-4eb2-be07-7588a47141f8</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PyDeluxeEdit.py</StartupFile>
+    <StartupFile>main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,12 +22,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="actions.py" />
+    <Compile Include="api.py" />
     <Compile Include="main.py" />
+    <Compile Include="mainWidget.py" />
+    <Compile Include="models.py" />
     <Compile Include="PyDeluxeEdit.py" />
+    <Compile Include="ui_mainwindow.py" />
+    <Compile Include="util.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="call.ps1" />
-    <Content Include="deluxeedit.ico" />
     <Content Include="deluxeedit.png" />
     <Content Include="PyDeluxeEdit.spec" />
     <Content Include="PyDeluxeEdit.ui" />
