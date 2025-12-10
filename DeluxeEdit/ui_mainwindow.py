@@ -59,17 +59,17 @@ class Ui_MainWindow(object):
        # Creating menus using a QMenu object
       
        # Creating actions
-        newAction= QAction(self)
-        aboutAction= QAction(self)
-        registerAction= QAction(self)
+        newAction= QAction()
+        aboutAction= QAction()
+        registerAction= QAction()
         newAction.setShortcut("Ctrl+N")
-        openAction = QAction(self)
+        openAction = QAction()
         openAction.setShortcut("Ctrl+O")
-        hexViewAction = QAction(self)
+        hexViewAction = QAction()
         hexViewAction.setShortcut("Ctrl+H")
-        saveAction = QAction(self)
+        saveAction = QAction()
         saveAction.setShortcut("Ctrl+S")
-        saveAsAction = QAction(self)
+        saveAsAction = QAction()
         
         # adding actions
         newMenu.addAction(newAction )
