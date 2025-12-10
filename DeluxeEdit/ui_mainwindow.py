@@ -27,7 +27,7 @@ class Ui_MainWindow(object):
     def setMenu(self):
         menuBar = self.MainWindow.menuBar
         # Creating menus
-        fileMenu = QMenu("&File", self)
+        fileMenu = QMenu("&File")
         menuBar.addMenu(fileMenu)
       # Source - https://stackoverflow.com/questions/10200594/pyqt-basic-example-of-accessing-and-adding-a-submenu-to-an-existing-context-men
 # Posted by Karnisov
