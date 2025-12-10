@@ -20,8 +20,6 @@ from mainWidget import MainWidget
 
 class Ui_MainWindow(object):
             
-    def o(self,text):
-        self.log.addItem(text)
 
     def autoLoadFile(self, filePath, hexView=False):
         self.mainWidget.autoLoadFile( filePath,hexView)
@@ -110,12 +108,9 @@ class Ui_MainWindow(object):
         self.MainWindow.setCentralWidget(self.tabs.tabFiles)
         self.api = Api()
         self.MainWindow.menuBar=QMenuBar()
-       
+
         self.setMenu()
 
-        #self.centralwidget = QtWidgets.QWidget(MainWindow)
-       # self.centralwidget.setObjectName("centralwidget")
-       # MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(self.MainWindow)
         QtCore.QMetaObject.connectSlotsByName(self.MainWindow)
