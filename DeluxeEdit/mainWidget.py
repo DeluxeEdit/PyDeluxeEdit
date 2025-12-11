@@ -63,12 +63,12 @@ class MainWidget(QWidget):
 
       
     
-    def __init__(self, status):
+    def __init__(self, status, myTabs):
         super().__init__()
         self.api = Api()
   
         self.statusBar  =status
-        self.tabs=Tabs()
+        self.tabs=myTabs
         self.tabs.currentTab.text
 
   

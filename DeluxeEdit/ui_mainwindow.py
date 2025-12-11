@@ -98,7 +98,7 @@ class Ui_MainWindow(object):
         self.MainWindow.statusBar=QStatusBar()
         self.MainWindow.statusBar.messageChanged.connect(self.statusChanged)
  
-        self.mainWidget =MainWidget(self.MainWindow.statusBar)
+        self.mainWidget =MainWidget(self.MainWindow.statusBar,self.tabs)
         
         toolbar = QToolBar("Log")
         log = QListWidget()
