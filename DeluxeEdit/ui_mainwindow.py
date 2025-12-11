@@ -45,7 +45,7 @@ class Ui_MainWindow(object):
         newMenu.title="&New"
         editMenu.title="&Edit"
         saveMenu.title="&Save"
-        saveAsMenu="Save As"
+        saveAsMenu.title="Save As"
         registerMenu.title="Register Shell Extensions"
         aboutMenu.title="&About"
 
@@ -75,7 +75,7 @@ class Ui_MainWindow(object):
         newMenu.addAction(newAction )
         editMenu.addAction(openAction )
         saveMenu.addAction(saveAction )
-        saveAsMenu.addAction(saveAsAction )
+        saveAsMenu.addAction(saveAsAction)
         newMenu.addAction(newAction )
         registerMenu.addAction(newAction )
         aboutMenu.addAction(aboutAction)
