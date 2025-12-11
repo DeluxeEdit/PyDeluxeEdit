@@ -81,7 +81,7 @@ class Ui_MainWindow(object):
         aboutMenu.addAction(aboutAction)
         
         # Creating connection between
-        newAction.triggered.connect(self.showNewFileDialog)
+        newAction.triggered.connect(self.mainWidget.showNewFileDialog)
         menuBar.show()
 
     def statusChanged(self,text):
