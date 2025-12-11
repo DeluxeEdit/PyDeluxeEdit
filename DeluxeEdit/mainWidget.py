@@ -41,6 +41,10 @@ class MainWidget(QWidget):
                 filePath = dialog.selectFile
                 self. addFile(filePath, hexView)
 
+
+    def save(self):
+        self.api.saveFile(self.tabs.currentTab.filePath,self.tabs.currentTab.text.document().toRawText())
+
     def saveAsDialog(self):
         filePath = QFileDialog.getSaveFileName(self, "Save File", "All Files(*);;Text Files(*.txt)")
         if filePath:
@@ -61,9 +65,13 @@ class MainWidget(QWidget):
     
     def __init__(self, status):
         super().__init__()
-
+        self.api = Api()
+  
         self.statusBar  =status
+        self.tabs=Tabs()
+        self.tabs.currentTab.text
 
+  
 
      #   self.window.ui.setupUi(self);                        
     #    self.window=uic.load_ui.loadUi(Api.ProjectUiFileName)

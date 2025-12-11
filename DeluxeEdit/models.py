@@ -1,11 +1,6 @@
 from PyQt6.QtWidgets import QWidget, QTextEdit, QFormLayout, QTabWidget
 
 class Tabs:
-       
-    def __init__(self):
-        super().__init__()
-        self.tabFiles = QTabWidget()
-        self.allTabs=[]
     @property
     def currentTab(self):
         result=None
@@ -15,6 +10,11 @@ class Tabs:
 
         return result
 
+    def __init__(self):
+        super().__init__()
+        self.tabFiles = QTabWidget()
+        self.allTabs=[]
+   
 class TextTabItem(QWidget):
 
     def onTextChanged(text):

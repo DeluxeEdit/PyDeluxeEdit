@@ -91,7 +91,8 @@ class Ui_MainWindow(object):
         self.MainWindow=QMainWindow()
         self. MainWindow.setWindowTitle("PyDeluxeEdit")
         self.MainWindow.resize(798, 600)
-        
+        self.tabs=Tabs()
+  
         
         self.MainWindow.setWindowIcon(QtGui.QIcon("deluxeedit.png"))
         self.MainWindow.statusBar=QStatusBar()
@@ -104,11 +105,8 @@ class Ui_MainWindow(object):
         toolbar.addWidget(log)
         self.MainWindow.addToolBar(toolbar)
         
-        self.tabs=Tabs()
         self.MainWindow.setCentralWidget(self.tabs.tabFiles)
-        self.api = Api()
         self.MainWindow.menuBar=QMenuBar()
-
         self.setMenu()
 
 
