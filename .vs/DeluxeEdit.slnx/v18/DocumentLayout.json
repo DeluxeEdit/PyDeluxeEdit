@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{584B83C8-51D7-4092-8265-B46373A760E1}|DeluxeEdit\\DeluxeEdit.pyproj|solutionrelative:DeluxeEdit\\mainWidget.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{584B83C8-51D7-4092-8265-B46373A760E1}|DeluxeEdit\\DeluxeEdit.pyproj|C:\\gitroot\\DeluxeEdit\\DeluxeEdit\\ui_mainwindow.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{584B83C8-51D7-4092-8265-B46373A760E1}|DeluxeEdit\\DeluxeEdit.pyproj|solutionrelative:DeluxeEdit\\ui_mainwindow.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{584B83C8-51D7-4092-8265-B46373A760E1}|DeluxeEdit\\DeluxeEdit.pyproj|C:\\gitroot\\DeluxeEdit\\DeluxeEdit\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{584B83C8-51D7-4092-8265-B46373A760E1}|DeluxeEdit\\DeluxeEdit.pyproj|solutionrelative:DeluxeEdit\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{584B83C8-51D7-4092-8265-B46373A760E1}|DeluxeEdit\\DeluxeEdit.pyproj|C:\\gitroot\\DeluxeEdit\\DeluxeEdit\\ui_mainwindow.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{584B83C8-51D7-4092-8265-B46373A760E1}|DeluxeEdit\\DeluxeEdit.pyproj|solutionrelative:DeluxeEdit\\ui_mainwindow.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{584B83C8-51D7-4092-8265-B46373A760E1}|DeluxeEdit\\DeluxeEdit.pyproj|C:\\gitroot\\DeluxeEdit\\DeluxeEdit\\start.py||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "DeluxeEdit\\mainWidget.py",
               "ToolTip": "C:\\gitroot\\DeluxeEdit\\DeluxeEdit\\mainWidget.py",
               "RelativeToolTip": "DeluxeEdit\\mainWidget.py",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAmwEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-12-11T13:37:46.643Z",
               "IsPinned": true,
@@ -63,28 +63,34 @@
               "Name": "ST:2:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ui_mainwindow.py",
               "DocumentMoniker": "C:\\gitroot\\DeluxeEdit\\DeluxeEdit\\ui_mainwindow.py",
               "RelativeDocumentMoniker": "DeluxeEdit\\ui_mainwindow.py",
               "ToolTip": "C:\\gitroot\\DeluxeEdit\\DeluxeEdit\\ui_mainwindow.py",
               "RelativeToolTip": "DeluxeEdit\\ui_mainwindow.py",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAAAGQAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAWwFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-09T23:54:28.344Z"
+              "WhenOpened": "2025-12-09T23:54:28.344Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "models.py",
               "DocumentMoniker": "C:\\gitroot\\DeluxeEdit\\DeluxeEdit\\models.py",
               "RelativeDocumentMoniker": "DeluxeEdit\\models.py",
               "ToolTip": "C:\\gitroot\\DeluxeEdit\\DeluxeEdit\\models.py",
               "RelativeToolTip": "DeluxeEdit\\models.py",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-09T21:35:44.246Z"
+              "WhenOpened": "2025-12-09T21:35:44.246Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -94,9 +100,10 @@
               "RelativeDocumentMoniker": "DeluxeEdit\\start.py",
               "ToolTip": "C:\\gitroot\\DeluxeEdit\\DeluxeEdit\\start.py",
               "RelativeToolTip": "DeluxeEdit\\start.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-09T21:28:53.882Z"
+              "WhenOpened": "2025-12-09T21:28:53.882Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

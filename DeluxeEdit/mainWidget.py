@@ -69,7 +69,6 @@ class MainWidget(QWidget):
   
         self.statusBar  =status
         self.tabs=myTabs
-        self.tabs.currentTab.text
 
   
 
