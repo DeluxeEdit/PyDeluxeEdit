@@ -1,8 +1,6 @@
-Zimport sys 
-from PyQt6.QtWidgets import QApplication
-from PyQt6 import QtGui
+import sys 
 from mainWidget import MainWidget       
-from PyQt6.QtWidgets import QMainWindow
+from PyQt6.QtWidgets import QApplication
 from ui_mainwindow import  Ui_MainWindow
         
 #if __name__ == "__main__":
