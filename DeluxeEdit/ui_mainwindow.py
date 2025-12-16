@@ -60,16 +60,18 @@ class Ui_MainWindow(object):
       
        # Creating actions
         newAction= QAction()
-        aboutAction= QAction()
-        registerAction= QAction()
-        newAction.setShortcut("Ctrl+N")
         openAction = QAction()
-        openAction.setShortcut("Ctrl+O")
         hexViewAction = QAction()
-        hexViewAction.setShortcut("Ctrl+H")
-        saveAction = QAction()
-        saveAction.setShortcut("Ctrl+S")
         saveAsAction = QAction()
+        saveAction = QAction()
+        registerAction= QAction()
+        aboutAction= QAction()
+         
+        # setting shortcuts
+        newAction.setShortcut("Ctrl+N")
+        openAction.setShortcut("Ctrl+O")
+        hexViewAction.setShortcut("Ctrl+H")
+        saveAction.setShortcut("Ctrl+S")
         
         # adding actions
         newMenu.addAction(newAction )
