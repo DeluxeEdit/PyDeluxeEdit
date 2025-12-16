@@ -24,4 +24,4 @@ ui = Ui_MainWindow()
 if autoloadPath:
     ui.autoLoadFile(autoloadPath, autoLoadHex)
 
-sys.exit(app.exec_())
+sys.exit(app.exec())
