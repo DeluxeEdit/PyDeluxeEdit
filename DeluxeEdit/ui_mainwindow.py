@@ -76,7 +76,7 @@ class Ui_MainWindow(object):
         # adding actions
         newMenu.addAction(newAction )
         editMenu.addAction(openAction )
-        saveMenu.addAction(saveAction )
+        saveMenu.addAction( saveAction )
         saveAsMenu.addAction(saveAsAction)
         newMenu.addAction(newAction )
         registerMenu.addAction(newAction )
@@ -91,7 +91,7 @@ class Ui_MainWindow(object):
 
     def setupUi(self):
         self.MainWindow=QMainWindow()
-        self. MainWindow.setWindowTitle("PyDeluxeEdit")
+        self. MainWindow.setWindowTitle("DeluxeEdit")
         self.MainWindow.resize(798, 600)
         self.tabs=Tabs()
   
@@ -108,7 +108,8 @@ class Ui_MainWindow(object):
         self.MainWindow.addToolBar(toolbar)
         
         self.MainWindow.setCentralWidget(self.tabs.tabFiles)
-        self.MainWindow.menuBar=QMenuBar()
+        self.MainWindow.m0enu=QMenuBar()
+        self.MainWin
         self.setMenu()
 
 
