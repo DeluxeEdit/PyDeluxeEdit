@@ -34,7 +34,7 @@
     <Content Include="call.ps1" />
     <Content Include="deluxeedit.png" />
     <Content Include="DeluxeEdit.spec" />
-    <Content Include="register.ps1" />
+    <Content Include="install.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

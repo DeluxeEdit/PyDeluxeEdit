@@ -13,7 +13,7 @@ try
 }
 catch 
 { 
- winget install Microsoft.DotNet.SDK.9
+ winget install Microsoft.DotNet.SDK.10
 }
  
 
