@@ -6,7 +6,7 @@ from models import TextTabItem, Tabs,About
 from api import Api
 from util import *
  #"from PySid.QtUiTools import QUiLoader
-class MainWidget(QWidget):
+class MainFunc:
 
     def autoLoadFile(self, filePath, hexView=False):
       self.addFile(filePath, hexView)

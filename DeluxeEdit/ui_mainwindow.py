@@ -16,14 +16,14 @@ from PyQt6.QtGui import QIcon, QAction
 from models import TextTabItem, Tabs
 from api import Api
 from util import *
-from mainWidget import MainWidget       
+from mainFunc import MainFunc       
 
 
 class Ui_MainWindow(object):
             
 
     def autoLoadFile(self, filePath, hexView=False):
-        self.mainWidget.autoLoadFile( filePath,hexView)
+        self.main.autoLoadFile( filePath,hexView)
   
     def setMenu(self):
         menuBar = self.menu
@@ -84,7 +84,7 @@ class Ui_MainWindow(object):
         aboutMenu.addAction(aboutAction)
         
         # Creating connection between
-        newAction.triggered.connect(self.mainWidget.showNewFileDialog)
+        newAction.triggered.connect(self.main.showNewFileDialog)
         
         menuBar.show()
 
@@ -108,7 +108,7 @@ class Ui_MainWindow(object):
         self.statusBar.showMessage("Startup")
 
         self.MainWindow.statusBar.messageChanged.connect(self.statusChanged)
-        self.mainWidget =MainWidget(self.statusBar,self.tabs)
+        self.main =MainFunc(self.statusBar,self.tabs)
         
         toolbar = QToolBar("Log")
         log = QListWidget()
