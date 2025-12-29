@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import QWidget, QTextEdit, QFormLayout, QTabWidget
+from PyQt6.QtWidgets import QWidget, QTextEdit, QFormLayout, QTabWidget, QLabel,QApplication
 
 class Tabs:
 
@@ -33,3 +33,14 @@ class TextTabItem(QWidget):
         self.isNewFile=False
         layout.addRow(self.text)
         self.text.textChanged.connect(self.onTextChanged)
+
+class About(QWidget):
+
+    def __init__(self):
+        super().__init__()
+        layout = QFormLayout()
+        self.setLayout(layout)
+        self.applicationName = QLabel
+        self.applicationVersion=QLabel
+        self.applicationName= QApplication.applicationName
+        self.applicationVersion= QApplication.applicationVersion

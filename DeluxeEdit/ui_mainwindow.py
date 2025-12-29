@@ -85,6 +85,7 @@ class Ui_MainWindow(object):
         
         # Creating connection between
         newAction.triggered.connect(self.mainWidget.showNewFileDialog)
+        
         menuBar.show()
 
     def statusChanged(self,text):
@@ -116,7 +117,7 @@ class Ui_MainWindow(object):
         
         self.MainWindow.setCentralWidget(self.tabs.tabFiles)
         self.menu=QMenuBar()
-        self.MainWindow.setMenuBar(self.menu)
+        self.MainWindow.setMenuBar (self.menu)
         self.setMenu()
 
 

@@ -7,12 +7,12 @@ class Api:
     ReadBufferSizeBytes = 32 * 1024
     #ProjectUiFileName=".\\PyDeluxeEdit.ui"
     
-    def saveFile(filePath, text):
+    def saveFile(self,filePath, text):
               with open(filePath, 'w') as f:
                 f.write(text)
       
 
-    def loadFile(filePath,hexView=False):
+    def loadFile(self,filePath,hexView=False):
         result=[]
         if not path.isfile(filePath): raise FileExistsError(filePath)
         fileSize=path.getsize(filePath)

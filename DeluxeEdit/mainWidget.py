@@ -2,7 +2,7 @@ from os import path
 from PyQt6.QtWidgets import QWidget, QMainWindow,QMenuBar, QMenu,QFileDialog, QStatusBar, QToolBar,QListWidget
 from PyQt6 import uic   
 from PyQt6.QtGui import QIcon, QAction
-from models import TextTabItem, Tabs
+from models import TextTabItem, Tabs,About
 from api import Api
 from util import *
  #"from PySid.QtUiTools import QUiLoader
@@ -23,7 +23,6 @@ class MainWidget(QWidget):
         
         self.statusBar.showMessage("File:", filePath)
  
-        
     def showNewFileDialog(self):
         dialog = QFileDialog(self)
         dialog.setFileMode(QFileDialog.FileMode.AnyFile)
@@ -33,7 +32,7 @@ class MainWidget(QWidget):
             self.addFile(filePath, False, True)
                
 
-    def openFileDialog(self,hexView=False):
+    def showOpenFileDialog(self,hexView=False):
         dialog = QFileDialog(self)
         dialog.setFileMode(QFileDialog.FileMode.ExistingFiles)
         dialog.setNameFilter("Open File", "All files (*.*)")
@@ -42,10 +41,13 @@ class MainWidget(QWidget):
                 self. addFile(filePath, hexView)
 
 
-    def save(self):
+    def saveFile(self):
         self.api.saveFile(self.tabs.currentTab.filePath,self.tabs.currentTab.text.document().toRawText())
 
-    def saveAsDialog(self):
+    def showAbout(self):
+        about=About()
+        about.show()
+    def showSaveAsDialog(self):
         filePath = QFileDialog.getSaveFileName(self, "Save File", "All Files(*);;Text Files(*.txt)")
         if filePath:
             self.api.saveFile(filePath,self.tabs.currentTab.text.document().toRawText())
