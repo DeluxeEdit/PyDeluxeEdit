@@ -28,27 +28,18 @@ class Ui_MainWindow(object):
     def setMenu(self):
         menuBar = self.menu
         # Creating menus
-        fileMenu = QMenu("&File")
+        fileMenu = QMenu("&File",self)
         menuBar.addMenu(fileMenu)
-      # Source - https://stackoverflow.com/questions/10200594/pyqt-basic-example-of-accessing-and-adding-a-submenu-to-an-existing-context-men
-# Posted by Karnisov
-# Retrieved 2025-11-06, License - CC BY-SA 3.0
 
         
         
-        newMenu = QMenu(fileMenu)
-        editMenu = QMenu(fileMenu )
-        saveMenu = QMenu(fileMenu)
-        saveAsMenu = QMenu(fileMenu)
-        registerMenu = QMenu(fileMenu)
-        aboutMenu = QMenu(fileMenu)
+        newMenu = QMenu("&New",fileMenu)
+        editMenu = QMenu("&Edit",fileMenu )
+        saveMenu = QMenu("&Save",fileMenu)
+        saveAsMenu = QMenu("Save As",fileMenu)
+        registerMenu = QMenu("Register Shell Extensions",fileMenu)
+        aboutMenu = QMenu("&About",fileMenu)
         
-        newMenu.title="&New"
-        editMenu.title="&Edit"
-        saveMenu.title="&Save"
-        saveAsMenu.title="Save As"
-        registerMenu.title="Register Shell Extensions"
-        aboutMenu.title="&About"
 
         menuBar.addMenu(newMenu)
         menuBar.addMenu(editMenu)
