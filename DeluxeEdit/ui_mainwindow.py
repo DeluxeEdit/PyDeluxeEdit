@@ -107,7 +107,7 @@ class Ui_MainWindow(object):
         
         self.statusBar.showMessage("Startup")
 
-        self.MainWindow.statusBar.messageChanged.connect(self.statusChanged)
+        self.statusBar.messageChanged.connect(self.statusChanged)
         self.main =MainFunc(self.statusBar,self.tabs)
         
         toolbar = QToolBar("Log")
