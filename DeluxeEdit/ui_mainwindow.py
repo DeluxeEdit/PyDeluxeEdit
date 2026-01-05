@@ -28,9 +28,8 @@ class Ui_MainWindow(object):
     def setMenu(self):
         menuBar = self.menu
         # Creating menus
-        fileMenu = QMenu("&File",self)
-        menuBar.addMenu(fileMenu)
-
+        fileMenu = menuBar.addMenu('&File')
+        
         
         
         newMenu = QMenu("&New",fileMenu)
