@@ -32,7 +32,7 @@ class Ui_MainWindow(object):
         
         
         
-        newMenu = QMenu("&New",fileMenu)
+        #newMenu = QMenu("&New",fileMenu)
         editMenu = QMenu("&Edit",fileMenu )
         saveMenu = QMenu("&Save",fileMenu)
         saveAsMenu = QMenu("Save As",fileMenu)
@@ -40,7 +40,7 @@ class Ui_MainWindow(object):
         aboutMenu = QMenu("&About",fileMenu)
         
 
-        menuBar.addMenu(newMenu)
+   ##   menuBar.addMenu(newMenu)
         menuBar.addMenu(editMenu)
         menuBar.addMenu(saveMenu)
         menuBar.addMenu(saveAsMenu)
@@ -50,7 +50,7 @@ class Ui_MainWindow(object):
        # Creating menus using a QMenu object
       
        # Creating actions
-        newAction= QAction()
+        newAction= QAction("&New",fileMenu)
         openAction = QAction()
         hexViewAction = QAction()
         saveAsAction = QAction()
@@ -65,11 +65,11 @@ class Ui_MainWindow(object):
         saveAction.setShortcut("Ctrl+S")
         
         # adding actions
-        newMenu.addAction(newAction )
+        #newMenu.addAction(newAction )
         editMenu.addAction(openAction )
         saveMenu.addAction( saveAction )
         saveAsMenu.addAction(saveAsAction)
-        newMenu.addAction(newAction )
+        #newMenu.addAction(newAction )
         registerMenu.addAction(newAction )
         aboutMenu.addAction(aboutAction)
         
@@ -101,8 +101,8 @@ class Ui_MainWindow(object):
         self.main =MainFunc(self.statusBar,self.tabs)
         
         toolbar = QToolBar("Log")
-        log = QListWidget()
-        toolbar.addWidget(log)
+        self.log = QListWidget()
+        toolbar.addWidget(self.log)
         self.MainWindow.addToolBar(toolbar)
         
         self.MainWindow.setCentralWidget(self.tabs.tabFiles)
