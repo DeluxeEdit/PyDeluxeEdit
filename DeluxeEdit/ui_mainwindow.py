@@ -29,6 +29,16 @@ class Ui_MainWindow(object):
         menuBar = self.menu
         # Creating menus
         fileMenu = menuBar.addMenu('&File')
+        newAction= QAction("&New",self.MainWindow)
+
+        openAction = QAction()
+        hexViewAction = QAction()
+        saveAsAction = QAction()
+        saveAction = QAction()
+        registerAction= QAction()
+        aboutAction= QAction()
+        
+        fileMenu.addAction(newAction)
         
         
         
@@ -50,13 +60,6 @@ class Ui_MainWindow(object):
        # Creating menus using a QMenu object
       
        # Creating actions
-        newAction= QAction().menu="New"
-        openAction = QAction()
-        hexViewAction = QAction()
-        saveAsAction = QAction()
-        saveAction = QAction()
-        registerAction= QAction()
-        aboutAction= QAction()
          
         # setting shortcuts
         newAction.setShortcut("Ctrl+N")
