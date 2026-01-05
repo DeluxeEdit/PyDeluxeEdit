@@ -50,7 +50,7 @@ class Ui_MainWindow(object):
        # Creating menus using a QMenu object
       
        # Creating actions
-        newAction= QAction("&New",fileMenu)
+        newAction= QAction().menu="New"
         openAction = QAction()
         hexViewAction = QAction()
         saveAsAction = QAction()
