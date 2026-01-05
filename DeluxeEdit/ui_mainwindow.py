@@ -28,9 +28,14 @@ class Ui_MainWindow(object):
     def setMenu(self):
         menuBar = self.menu
         # Creating menus
-        fileMenu = menuBar.addMenu('&File')
-        newAction= QAction("&New",self.MainWindow)
+        fileMenu = menuBar.addxMenu('&File')
+        fileMenu.addSeparator()
 
+        newAction= QAction("&New",self.MainWindow)
+        fileMenu.addAction(newAction)
+        newAction.setShortcut("Ctrl+N")
+        newAction.triggered.connect(self.main.showNewFileDialog)
+        
         openAction = QAction()
         hexViewAction = QAction()
         saveAsAction = QAction()
@@ -38,7 +43,6 @@ class Ui_MainWindow(object):
         registerAction= QAction()
         aboutAction= QAction()
         
-        fileMenu.addAction(newAction)
         
         
         
@@ -62,7 +66,6 @@ class Ui_MainWindow(object):
        # Creating actions
          
         # setting shortcuts
-        newAction.setShortcut("Ctrl+N")
         openAction.setShortcut("Ctrl+O")
         hexViewAction.setShortcut("Ctrl+H")
         saveAction.setShortcut("Ctrl+S")
@@ -77,7 +80,6 @@ class Ui_MainWindow(object):
         aboutMenu.addAction(aboutAction)
         
         # Creating connection between
-        newAction.triggered.connect(self.main.showNewFileDialog)
         
         menuBar.show()
 
