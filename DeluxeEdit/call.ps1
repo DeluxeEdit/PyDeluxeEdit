@@ -1,4 +1,4 @@
-pyinstaller.exe -n DeluxeEdit .\main.py --specpath . -i deluxeedit.ico --clean
+pyinstaller.exe -n DeluxeEdit .\start.py --specpath . -i deluxeedit.ico --clean
  
 New-SelfSignedCertificate `
      -Type Custom `

@@ -2,7 +2,7 @@
 
 
 a = Analysis(
-    ['main.py'],
+    ['start.py'],
     pathex=[],
     binaries=[],
     datas=[],
@@ -21,7 +21,7 @@ exe = EXE(
     a.scripts,
     [],
     exclude_binaries=True,
-    name='PyDeluxeEdit',
+    name='DeluxeEdit',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -41,5 +41,5 @@ coll = COLLECT(
     strip=False,
     upx=True,
     upx_exclude=[],
-    name='PyDeluxeEdit',
+    name='DeluxeEdit',
 )
