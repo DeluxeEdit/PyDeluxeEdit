@@ -32,6 +32,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="call.ps1" />
+    <Content Include="deluxeedit.ico" />
     <Content Include="deluxeedit.png" />
     <Content Include="DeluxeEdit.spec" />
     <Content Include="install.ps1" />

@@ -32,86 +32,51 @@ class Ui_MainWindow(object):
          # start with new
       
         fileMenu.addSeparator()
-
         newAction= QAction("&New",self.MainWindow)
         fileMenu.addAction(newAction)
         newAction.setShortcut("Ctrl+N")
         newAction.triggered.connect(self.main.showNewFileDialog)
+        
         # then with open
         fileMenu.addSeparator()
         openAction = QAction("&Edit",self.MainWindow)
         fileMenu.addAction(openAction)
         openAction.setShortcut("Ctrl+O")
         openAction.triggered.connect(self.main.showOpenFileDialog)
-        # then with hexview
+      
+      # then with hexview
         fileMenu.addSeparator()
-
         hexViewAction = QAction("&Hex View",self.MainWindow)
         fileMenu.addAction(hexViewAction)
         hexViewAction.setShortcut("Ctrl+H")
         hexViewAction.triggered.con0nect(self.main.doHexView)
-       # then with saveas
+       
+        # then with saveas
         fileMenu.addSeparator()
   
         saveAsAction = QAction("Save As", self.MainWindow)
         saveAsAction.triggered.connect(self.main.showSaveAsDialog)
         fileMenu.addAction( saveAsAction  )   
+        
         # then with save
         fileMenu.addSeparator()
-  
-        
         saveAction = QAction("&Save",self.MainWindow)
         fileMenu.addAction( saveAction  )   
         saveAction.triggered.connect(self.main.saveFile)
         saveAction.setShortcut("Ctrl+S")
+        
         # then the rest
         fileMenu.addSeparator()
-  
         registerAction= QAction("Register Shell Extensions",self.MainWindow)
         fileMenu.addAction( registerAction  )   
-      
         registerAction.triggered.connect(self.main.registerShellExtesions)
-       
-        aboutAction= QAction("&About", self.MainWindow)
+        
         fileMenu.addSeparator()
+        aboutAction= QAction("&About", self.MainWindow)
         fileMenu.addAction( aboutAction  ) 
         aboutAction.triggered.connect(self.main.showAbout)
  
-        
-        
-        
-        #newMenu = QMenu("&New",fileMenu)
-        editMenu = QMenu("&Edit",fileMenu )
-        saveMenu = QMenu("&Save",fileMenu)
-        saveAsMenu = QMenu("Save As",fileMenu)
-        registerMenu = QMenu("Register Shell Extensions",fileMenu)
-        aboutMenu = QMenu("&About",fileMenu)
-        
-
-   ##   menuBar.addMenu(newMenu)
-        menuBar.addMenu(editMenu)
-        menuBar.addMenu(saveMenu)
-        menuBar.addMenu(saveAsMenu)
-        menuBar.addMenu(registerMenu)
-        menuBar.addMenu(aboutMenu)
-        
-       # Creating menus using a QMenu object
-      
-       # Creating actions
-         
-        # setting shortcuts
-        
-        # adding actions
-        #newMenu.addAction(newAction )
-        editMenu.addAction(openAction )
-        saveMenu.addAction( saveAction )
-        saveAsMenu.addAction(saveAsAction)
-        #newMenu.addAction(newAction )
-        registerMenu.addAction(newAction )
-        aboutMenu.addAction(aboutAction)
-        
-        # Creating connection between
-        
+ 
         menuBar.show()
 
     def statusChanged(self,text):
