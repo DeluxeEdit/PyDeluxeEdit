@@ -24,6 +24,7 @@
     <Compile Include="actions.py" />
     <Compile Include="api.py" />
     <Compile Include="DeluxeEdit.py" />
+    <Compile Include="gen_msix_xml.py" />
     <Compile Include="start.py" />
     <Compile Include="mainFunc.py" />
     <Compile Include="models.py" />
@@ -36,6 +37,7 @@
     <Content Include="deluxeedit.png" />
     <Content Include="DeluxeEdit.spec" />
     <Content Include="install.ps1" />
+    <Content Include="manifest.json" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

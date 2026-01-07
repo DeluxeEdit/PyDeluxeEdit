@@ -1,5 +1,6 @@
 pyinstaller.exe -n DeluxeEdit .\start.py --specpath . -i deluxeedit.ico --clean
  
+python .\gen_msix_xml.py --app-version 1.0.0.0 --manifest .\manifest.json --logo-dir .\logos .\dist\demo\
 New-SelfSignedCertificate `
      -Type Custom `
      -Subject "CN=Pierre Signing Cert, C=SE" `
