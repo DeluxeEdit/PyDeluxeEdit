@@ -32,6 +32,7 @@
     <Compile Include="util.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AppxManifest.xml" />
     <Content Include="call.ps1" />
     <Content Include="deluxeedit.ico" />
     <Content Include="deluxeedit.png" />

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:uap10="http://schemas.microsoft.com/appx/manifest/uap/windows10/10" xmlns:uap13="http://schemas.microsoft.com/appx/manifest/uap/windows10/13" xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" IgnorableNamespaces="uap13">
+  <Identity Name="DemoCompany.PythonMSIXAppDemo" Version="1.0.0.0" Publisher="CN=Pierre Signing Cert, C=SE" ProcessorArchitecture="x64" />
+  <Properties>
+    <DisplayName>Python MSIX App Demo</DisplayName>
+    <PublisherDisplayName>Demo Company</PublisherDisplayName>
+    <Description>A demonstration on using MSIX to package a bundled Python application</Description>
+    <Logo>msix_assets\logo_150x150.png</Logo>
+  </Properties>
+  <Resources>
+    <Resource Language="en-us" />
+  </Resources>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.19041.0" MaxVersionTested="10.0.19041.0" />
+  </Dependencies>
+  <Capabilities>
+    <rescap:Capability Name="runFullTrust" />
+  </Capabilities>
+  <Applications>
+    <Application Id="PythonMSIXAppDemo" Executable="demo.exe" uap10:RuntimeBehavior="packagedClassicApp" uap10:TrustLevel="mediumIL">
+      <uap:VisualElements DisplayName="Python MSIX App Demo" Description="A demonstration on using MSIX to package a bundled Python application" Square150x150Logo="msix_assets\logo_150x150.png" Square44x44Logo="msix_assets\logo_44x44.png" BackgroundColor="white" />
+    </Application>
+  </Applications>
+</Package>
