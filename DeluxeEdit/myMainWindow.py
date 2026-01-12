@@ -18,7 +18,7 @@ from util import *
 from mainFunc import MainFunc       
 
 
-class Ui_MainWindow(object):
+class MyMainWindow(object):
             
 
     def autoLoadFile(self, filePath, hexView=False):
@@ -126,7 +126,7 @@ if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
+    ui = MyMainWindow()
     ui.setupUi()
     MainWindow.show()
     sys.exit(app.exec_())
