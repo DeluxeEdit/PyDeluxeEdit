@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\gitroot\\DeluxeEdit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{584B83C8-51D7-4092-8265-B46373A760E1}|DeluxeEdit\\DeluxeEdit.pyproj|C:\\gitroot\\DeluxeEdit\\DeluxeEdit\\myMainWindow.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{584B83C8-51D7-4092-8265-B46373A760E1}|DeluxeEdit\\DeluxeEdit.pyproj|solutionrelative:DeluxeEdit\\myMainWindow.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{584B83C8-51D7-4092-8265-B46373A760E1}|DeluxeEdit\\DeluxeEdit.pyproj|C:\\gitroot\\DeluxeEdit\\DeluxeEdit\\start.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{584B83C8-51D7-4092-8265-B46373A760E1}|DeluxeEdit\\DeluxeEdit.pyproj|solutionrelative:DeluxeEdit\\start.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{584B83C8-51D7-4092-8265-B46373A760E1}|DeluxeEdit\\DeluxeEdit.pyproj|C:\\gitroot\\DeluxeEdit\\DeluxeEdit\\myMainWindow.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{584B83C8-51D7-4092-8265-B46373A760E1}|DeluxeEdit\\DeluxeEdit.pyproj|solutionrelative:DeluxeEdit\\myMainWindow.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{584B83C8-51D7-4092-8265-B46373A760E1}|DeluxeEdit\\DeluxeEdit.pyproj|C:\\gitroot\\DeluxeEdit\\DeluxeEdit\\mainFunc.py||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -58,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
@@ -71,8 +71,7 @@
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-12-11T13:37:46.643Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -96,8 +95,7 @@
               "RelativeToolTip": "DeluxeEdit\\AppxManifest.xml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2026-01-12T10:28:01.894Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-12T10:28:01.894Z"
             },
             {
               "$type": "Document",
@@ -109,8 +107,7 @@
               "RelativeToolTip": "DeluxeEdit\\call.ps1",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-01-06T18:49:26.36Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-06T18:49:26.36Z"
             },
             {
               "$type": "Document",
@@ -122,31 +119,30 @@
               "RelativeToolTip": "DeluxeEdit\\install.ps1",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-23T13:44:39.023Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-23T13:44:39.023Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "myMainWindow.py",
               "DocumentMoniker": "C:\\gitroot\\DeluxeEdit\\DeluxeEdit\\myMainWindow.py",
               "RelativeDocumentMoniker": "DeluxeEdit\\myMainWindow.py",
               "ToolTip": "C:\\gitroot\\DeluxeEdit\\DeluxeEdit\\myMainWindow.py",
               "RelativeToolTip": "DeluxeEdit\\myMainWindow.py",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAABQAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-12-09T23:54:28.344Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "start.py",
               "DocumentMoniker": "C:\\gitroot\\DeluxeEdit\\DeluxeEdit\\start.py",
               "RelativeDocumentMoniker": "DeluxeEdit\\start.py",
               "ToolTip": "C:\\gitroot\\DeluxeEdit\\DeluxeEdit\\start.py",
               "RelativeToolTip": "DeluxeEdit\\start.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-01-07T15:00:56.78Z",
               "EditorCaption": ""
@@ -161,8 +157,7 @@
               "RelativeToolTip": "DeluxeEdit\\gen_msix_xml.py",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-01-07T14:14:43.493Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-07T14:14:43.493Z"
             },
             {
               "$type": "Document",
@@ -174,8 +169,7 @@
               "RelativeToolTip": "DeluxeEdit\\DeluxeEdit.py",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-01-07T14:59:48.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-07T14:59:48.916Z"
             },
             {
               "$type": "Document",
@@ -187,8 +181,7 @@
               "RelativeToolTip": "DeluxeEdit\\api.py",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-09T21:11:07.258Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T21:11:07.258Z"
             },
             {
               "$type": "Document",
@@ -200,8 +193,7 @@
               "RelativeToolTip": "DeluxeEdit\\models.py",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAACwAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-09T21:35:44.246Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T21:35:44.246Z"
             },
             {
               "$type": "Document",
@@ -213,8 +205,7 @@
               "RelativeToolTip": "DeluxeEdit\\actions.py",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-09T21:25:09.586Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-09T21:25:09.586Z"
             },
             {
               "$type": "Document",
@@ -226,8 +217,7 @@
               "RelativeToolTip": "DeluxeEdit\\util.py",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-29T11:48:15.075Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-29T11:48:15.075Z"
             }
           ]
         }

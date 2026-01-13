@@ -8,7 +8,7 @@ QApplication.setApplicationVersion("0.9.0")
 
 #if __name__ == "__main__":
 app = QApplication(sys.argv)
-main = MyMainWindow()
+my = MyMainWindow()
 
 parser =  ArgumentParser()
 
@@ -22,6 +22,6 @@ parsed_args = parser.parse_args()
     
 #ui.setupUi()
 if parsed_args.path:
-    main.autoLoadFile(parsed_args.path,parsed_args.doHexView)
+    my.autoLoadFile(parsed_args.path,parsed_args.doHexView)
 
 sys.exit(app.exec())
