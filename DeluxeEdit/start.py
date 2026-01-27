@@ -15,7 +15,7 @@ parser =  ArgumentParser()
 parser.add_argument("path",help="The desired path to open",default=None)
 parser.add_argument("--hex",dest="doHexView",help="Whether we should do Hex View",default=False)
      
-parsed_args = parser.parse_args()
+parsed_args = parser.parse_args(sys.argv)
     
 #ui.setupUi()
 if parsed_args.path:
