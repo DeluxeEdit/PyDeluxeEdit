@@ -37,7 +37,7 @@
     <Content Include="deluxeedit.ico" />
     <Content Include="deluxeedit.png" />
     <Content Include="DeluxeEdit.spec" />
-    <Content Include="install.ps1" />
+    <Content Include="installShellExtensions.ps1" />
     <Content Include="manifest.json" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

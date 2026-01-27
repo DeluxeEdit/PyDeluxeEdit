@@ -56,7 +56,7 @@ class MainFunc:
         self.openFileDialog(True)
   
     def registerShellExtesions(self):
-        Util.ExecuteShell("powershell.exe install.ps1")
+        Util.ExecuteShell("powershell.exe installShellExtensions.ps1")
 
 
 
