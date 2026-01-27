@@ -23,7 +23,6 @@
   <ItemGroup>
     <Compile Include="actions.py" />
     <Compile Include="api.py" />
-    <Compile Include="DeluxeEdit.py" />
     <Compile Include="gen_msix_xml.py" />
     <Compile Include="start.py" />
     <Compile Include="mainFunc.py" />
