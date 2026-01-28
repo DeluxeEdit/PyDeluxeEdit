@@ -12,12 +12,9 @@ my = MyMainWindow()
 
 parser =  ArgumentParser()
 
-parser.add_argument("path",  
 parser.add_argument("path",help="The desired path to open",default=None)
 parser.add_argument("--hex",dest="doHexView",help="Whether we should do Hex View",default=False)
-
-parsed_args = parser.parse_args()
-    
+parsed_args = parser.parse_args()    
 #ui.setupUi()
 if parsed_args.path:
     my.autoLoadFile(parsed_args.path,parsed_args.doHexView)
