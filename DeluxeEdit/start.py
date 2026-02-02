@@ -14,16 +14,17 @@ parser =  ArgumentParser()
 
 parser.add_argument(
     "path",
-    help="The desired path´to open.",
+    default=None,
     required=False,
-    default=None)
+    help="The desired path´to open."
+    )
 
 parser.add_argument(
     "--hex",
-    help="Whether we should do Hex View",
     required=False,
     default=False,
-    dest="doHexView"
+    dest="doHexView",
+    help="Whether we should do Hex View",
     )
 
 parsed_args = parser.parse_args()
