@@ -16,7 +16,7 @@ parser.add_argument(
     "path",
     default=None,
     required=False,
-    help="The desired path´to open."
+    help="The desired path to open."
     )
 
 parser.add_argument(
