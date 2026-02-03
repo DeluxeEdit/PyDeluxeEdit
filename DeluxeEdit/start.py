@@ -8,10 +8,11 @@ QApplication.setApplicationVersion("0.9.0")
 #if __name__ == "__main__":
 app = QApplication(sys.argv)
 my = MyMainWindow()
-args=len(sys.argv)
-if args>1:
+argsLen=len(sys.argv)
+
+if argsLen>1:
     autoloadPath= sys.argv[0]
-    if args>=2  and sys.argv in "hex":
+    if argsLen>=2  and sys.argv in "--hex":
         AutoLoadHex=True
     my.autoLoadFile(autoloadPath,AutoLoadHex)
 
