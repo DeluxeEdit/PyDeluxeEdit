@@ -37,7 +37,7 @@ class MyMainWindow(object):
         
         # then with open
         fileMenu.addSeparator()
-        openAction = QAction("&Edit",self.MainWindow)
+        openAction = QAction("&Open",self.MainWindow)
         fileMenu.addAction(openAction)
         openAction.setShortcut("Ctrl+O")
         openAction.triggered.connect(self.main.showOpenFileDialog)
@@ -48,6 +48,13 @@ class MyMainWindow(object):
         fileMenu.addAction(hexViewAction)
         hexViewAction.setShortcut("Ctrl+H")
         hexViewAction.triggered.connect(self.main.doHexView)
+        
+        # then with save
+        fileMenu.addSeparator()
+        saveAction = QAction("&Save",self.MainWindow)
+        fileMenu.addAction( saveAction  )   
+        saveAction.triggered.connect(self.main.saveFile)
+        saveAction.setShortcut("Ctrl+S")
        
         # then with saveas
         fileMenu.addSeparator()
@@ -56,12 +63,6 @@ class MyMainWindow(object):
         saveAsAction.triggered.connect(self.main.showSaveAsDialog)
         fileMenu.addAction( saveAsAction  )   
         
-        # then with save
-        fileMenu.addSeparator()
-        saveAction = QAction("&Save",self.MainWindow)
-        fileMenu.addAction( saveAction  )   
-        saveAction.triggered.connect(self.main.saveFile)
-        saveAction.setShortcut("Ctrl+S")
         
         # then the rest
         fileMenu.addSeparator()
