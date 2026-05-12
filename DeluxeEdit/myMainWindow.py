@@ -87,12 +87,7 @@ class MyMainWindow(object):
     def setupUi(self):
         self.MainWindow=QMainWindow()
         
-        # from stackocverflow
-        app = QApplication.instance()
-        self.setWindowFlags(self.windowFlags() | Qt.FramelessWindowHint)
-
-        self. MainWindow.title=app.applicationName()+" v."+app.applicationVersion()
-        self. MainWindow.setWindowTitle(app.applicationName()+" v."+app.applicationVersion())
+       
         self.MainWindow.resize(798, 600)
         self.tabs=Tabs()
   
@@ -125,7 +120,9 @@ class MyMainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "PyDeluxeEdit"))
+         # from stackocverflow
+        app = QApplication.instance()
+        MainWindow.setWindowTitle(_translate("MainWindow", app.applicationName()+" v."+app.applicationVersion()))
 
     def __init__(self):
         super().__init__()
