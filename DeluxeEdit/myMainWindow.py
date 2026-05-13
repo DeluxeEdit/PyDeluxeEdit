@@ -86,11 +86,7 @@ class MyMainWindow(object):
 
     def setupUi(self):
         self.MainWindow=QMainWindow()
-        # from stackoverflow 
-        currentApp= QApplication.instance()
-       
-        if currentApp:
-            self.MainWindow.setWindowTitle(currentApp.applicationName()+" v."+currentApp.applicationVersion())
+        self.MainWindow.setWindowTitle("DeluxeEdit v.0.9.0")
        
         self.MainWindow.resize(798, 600)
         self.tabs=Tabs()
