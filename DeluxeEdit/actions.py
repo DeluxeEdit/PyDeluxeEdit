@@ -1,12 +1,16 @@
+from unittest import result
 from urllib.parse import quote, unquote
 from enum import Enum
-from zipfile import ZIP_BZIP2
 
 class Actions:
     
     class ActionId(Enum): URLENCODE = 1; URLDENCODE= 2;
-      
+    
+    class ActionItem:
+        name=""
+        action=None
 
+             
    
     def mapEnum(self,indata,actionId):
         self.mappedFunc=None
@@ -28,3 +32,13 @@ class Actions:
     def decodeUrl(self,indata):
         result=unquote(indata)
         return result
+
+    def getActions(self):
+        result=[]
+        itemEnc=self.ActionItem()
+        itemEnc.name="URLENCODE"
+        result.append(itemEnc)
+        itemDec=self.ActionItem()
+        itemDec.name="URLDENCODE"
+        result.append(itemDec)
+        return result        
