@@ -51,5 +51,5 @@ class About(QWidget):
         self.setLayout(layout)
         self.applicationName = QLabel
         self.applicationVersion=QLabel
-        self.applicationName= QApplication.applicationName
-        self.applicationVersion= QApplication.applicationVersion
+        self.applicationName=AppInfo().name 
+        self.applicationVersion= AppInfo().versions

@@ -2,12 +2,10 @@ import sys
 from PyQt6.QtWidgets import QApplication
 from myMainWindow import  MyMainWindow
 from argparse import ArgumentParser
-import argparse
+
 app = QApplication(sys.argv)
 
 my = MyMainWindow()
-QApplication.setApplicationName()
-QApplication.setApplicationVersion()
 parser = ArgumentParser(
                     prog='DeluxeEdit',
                     description='Advanced Text Editor',
