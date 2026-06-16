@@ -1,13 +1,7 @@
 from curses import version
 from os import name
-
+from appinfo import AppInfo
 from PyQt6.QtWidgets import QWidget, QTextEdit, QFormLayout, QTabWidget, QLabel,QApplication
-class AppInfo:
-    name="DeluxeEdit"
-    version="0.9.0"
-   
-    
-
 
 class Tabs:
 

@@ -23,11 +23,12 @@
   <ItemGroup>
     <Compile Include="actions.py" />
     <Compile Include="api.py" />
+    <Compile Include="appinfo.py" />
     <Compile Include="gen_msix_xml.py" />
     <Compile Include="start.py" />
     <Compile Include="mainFunc.py" />
     <Compile Include="models.py" />
-    <Compile Include="myMainWindow.py" />
+    <Compile Include="mymainwindow.py" />
     <Compile Include="util.py" />
   </ItemGroup>
   <ItemGroup>

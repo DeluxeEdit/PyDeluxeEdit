@@ -19,7 +19,9 @@ from models import TextTabItem, Tabs
 from api import Api
 from util import *
 from mainFunc import MainFunc       
-from models import AppInfo 
+from appinfo import AppInfo
+                            
+
 
 
 class MyMainWindow(object):
