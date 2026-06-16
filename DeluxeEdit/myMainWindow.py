@@ -19,6 +19,7 @@ from models import TextTabItem, Tabs
 from api import Api
 from util import *
 from mainFunc import MainFunc       
+from models import AppInfo 
 
 
 class MyMainWindow(object):
@@ -86,7 +87,9 @@ class MyMainWindow(object):
 
     def setupUi(self):
         self.MainWindow=QMainWindow()
-        self.MainWindow.setWindowTitle("DeluxeEdit v.0.9.0")
+        appInfo=AppInfo()
+        
+        self.MainWindow.setWindowTitle(appInfo.name + "v." +appInfo.version)
        
         self.MainWindow.resize(798, 600)
         self.tabs=Tabs()

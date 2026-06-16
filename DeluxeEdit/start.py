@@ -5,10 +5,9 @@ from argparse import ArgumentParser
 import argparse
 app = QApplication(sys.argv)
 
-
 my = MyMainWindow()
-QApplication.setApplicationName("DeluxeEdit")
-QApplication.setApplicationVersion("0.9.0")
+QApplication.setApplicationName()
+QApplication.setApplicationVersion()
 parser = ArgumentParser(
                     prog='DeluxeEdit',
                     description='Advanced Text Editor',

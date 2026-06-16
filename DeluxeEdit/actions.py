@@ -4,31 +4,24 @@ from enum import Enum
 
 class Actions:
     
-    class ActionId(Enum): URLENCODE = 1; URLDENCODE= 2;
-    
     class ActionItem:
         name=""
-        action=None
+        mapped=None
 
              
    
-    def mapEnum(self,indata,actionId):
-        self.mappedFunc=None
-        if actionId is self.ActionId.URLENCODE:
-            self.mappedFunc=self.ecodeUrl
-        elif actionId is self.ActionId.URLDENCODE:
-            self.mappedFunc=self.decodeUrl
-          
-        return self.mappedFunc
-
+  
     def runMapped(self,indata,actionId):
       mapped=  self.mapEnum(indata,actionId)
       if (mapped): return mapped(indata)
      
-      def ecodeUrl(self,indata):
+
+    @staticmethod
+    def encodeUrl(self,indata):
         result=quote(indata)
         return result
-    
+
+    @staticmethod
     def decodeUrl(self,indata):
         result=unquote(indata)
         return result
@@ -36,9 +29,11 @@ class Actions:
     def getActions(self):
         result=[]
         itemEnc=self.ActionItem()
-        itemEnc.name="URLENCODE"
+        itemEnc.name="EncodeUrl"
+#        itemEnc.mapped=self.encodeUrl
         result.append(itemEnc)
         itemDec=self.ActionItem()
-        itemDec.name="URLDENCODE"
+        itemDec.name="DecodeUrl"
+  #      itemDec.mapped=self.decodeUrl
         result.append(itemDec)
         return result        
