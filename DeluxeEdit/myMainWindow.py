@@ -80,7 +80,16 @@ class MyMainWindow(object):
         aboutAction= QAction("&About", self.MainWindow)
         fileMenu.addAction( aboutAction  ) 
         aboutAction.triggered.connect(self.main.showAbout)
- 
+        
+        # finish with actions
+      
+        menuBar = self.menu
+        actionMenu = menuBar.addMenu('Actions')
+        
+        fileMenu.addSeparator()
+        newAction= QAction("&New",self.MainWindow)
+
+        self.tabs.
  
         menuBar.show()
 
@@ -92,7 +101,7 @@ class MyMainWindow(object):
         appInfo=AppInfo()
         
         self.MainWindow.setWindowTitle(appInfo.name + "v." +appInfo.version)
-       
+       vars
         self.MainWindow.resize(798, 600)
         self.tabs=Tabs()
   
