@@ -1,6 +1,6 @@
 import sys 
 from PyQt6.QtWidgets import QApplication
-from mymainwindow  import  MyMainWindow
+from  MyMainWindow  import  MyMainWindow
 from argparse import ArgumentParser
 
 app = QApplication(sys.argv)

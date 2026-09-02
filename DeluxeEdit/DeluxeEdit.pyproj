@@ -28,7 +28,7 @@
     <Compile Include="start.py" />
     <Compile Include="mainFunc.py" />
     <Compile Include="models.py" />
-    <Compile Include="mymainwindow.py" />
+    <Compile Include="MyMainWindow.py" />
     <Compile Include="util.py" />
   </ItemGroup>
   <ItemGroup>

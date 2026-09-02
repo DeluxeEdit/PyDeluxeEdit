@@ -1,4 +1,3 @@
-from curses import version
 from os import name
 from appinfo import AppInfo
 from PyQt6.QtWidgets import QWidget, QTextEdit, QFormLayout, QTabWidget, QLabel,QApplication

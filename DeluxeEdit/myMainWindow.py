@@ -42,7 +42,6 @@ class MyMainWindow(object):
         newAction.triggered.connect(self.main.showNewFileDialog)
         
         # then with open
-        fileMenu.addSeparator()
         openAction = QAction("&Open",self.MainWindow)
         fileMenu.addAction(openAction)
         openAction.setShortcut("Ctrl+O")
@@ -89,8 +88,7 @@ class MyMainWindow(object):
         fileMenu.addSeparator()
         newAction= QAction("&New",self.MainWindow)
 
-        self.tabs.
- 
+        
         menuBar.show()
 
     def statusChanged(self,text):
@@ -101,7 +99,6 @@ class MyMainWindow(object):
         appInfo=AppInfo()
         
         self.MainWindow.setWindowTitle(appInfo.name + "v." +appInfo.version)
-       vars
         self.MainWindow.resize(798, 600)
         self.tabs=Tabs()
   
